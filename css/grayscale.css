@@ -151,7 +151,7 @@ a:focus {
 .intro {
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding: 100spx 0;
     display: table;
     position: relative;
     text-align: center;
@@ -279,6 +279,10 @@ a:focus {
     margin-top: -35px;
 }
 
+.text-blue {
+    color: #21819d;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     .clock-item {
 	margin-bottom: 30px;
@@ -374,18 +378,13 @@ a:focus {
     padding: 50px 0;
     dispaly: block;
     position: relative;
+    background-color: rgba(0,0,0,.5);
 }
 
-.download-section:after {
-    content: "";
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1; 
+.parcours-left {
+    text-align: left;
+    font-family: 'Ubuntu';
+    font-size: 14pt;
 }
 
 /* .download-section { */
@@ -408,7 +407,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 100px;
     }
 
     .download-section {
