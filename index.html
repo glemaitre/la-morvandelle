@@ -14,6 +14,9 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- <\!-- SmartMenus CSS -\-> -->
+    <!-- <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet"> -->
+
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
 
@@ -55,13 +58,13 @@
               <a href="#page-top"></a>
             </li>
             <li>
-              <a class="page-scroll" href="#evenement">L'evenement</a>
+              <a class="page-scroll button-navbar" href="#evenement">L'evenement</a>
             </li>
             <li>
-              <a class="page-scroll" href="#parcours">Parcours</a>
+              <a class="page-scroll button-navbar" href="#parcours">Parcours</a>
             </li>
             <li>
-              <a class="page-scroll" href="#contact">Contact</a>
+              <a class="page-scroll button-navbar" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -77,23 +80,18 @@
           <h1 class="brand-heading"><span class="light">La</span> Sud-Morvandelle</h1>
           <p class="intro-text">JOURNEE SPORT NATURE</p>
 	  <p class="intro-text">Trail, Marche Nordique, VTT, Randonnee Pedestre et Equestre</p>
-	  <div class="row">
-	    <div class="col-md-2"></div>
-	    <div class="col-md-8"><img src="img/timer.png" height="48" width="96"></div>
-	    <div class="col-md-2"></div>
-	  </div>
 
 	  <div class="row">
 	    <div class="col-md-2"></div>
-	    <div class="col-md-1"></div>
-	    <div class=" clock-time col-md-6">11 Juillet 2015</div>
-	    <div class="col-md-1"></div>
+	    <div class="col-md-3"></div>
+	    <div class=" clock-time col-md-2 text-title intro-pad-image"><img src="img/timer.png" height="48" width="96"><br>11 Juillet 2015</div>
+	    <div class="col-md-3"></div>
 	    <div class="col-md-2"></div>
 	  </div>
 	  <div class="countdown countdown-container container">
 	    <div class="clock row">
-	      <div class="col-xs-0 col-md-4"></div>
-	      <div class="clock-item clock-days countdown-time-value col-xs-2 col-md-1">
+	      <div class="col-xs-1 col-md-4"></div>
+	      <div class="clock-item clock-days countdown-time-value col-xs-3 col-md-1">
 		<div class="wrap">
 		  <div class="inner">
 		    <div id="canvas-days" class="clock-canvas"></div>
@@ -106,7 +104,7 @@
 		</div><!-- /.wrap -->
 	      </div><!-- /.clock-item -->
 
-	      <div class="clock-item clock-hours countdown-time-value col-xs-2 col-md-1">
+	      <div class="clock-item clock-hours countdown-time-value col-xs-3 col-md-1">
 		<div class="wrap">
 		  <div class="inner">
 		    <div id="canvas-hours" class="clock-canvas"></div>
@@ -119,7 +117,7 @@
 		</div><!-- /.wrap -->
 	      </div><!-- /.clock-item -->
 
-	      <div class="clock-item clock-minutes countdown-time-value col-xs-2 col-md-1">
+	      <div class="clock-item clock-minutes countdown-time-value col-xs-3 col-md-1">
 		<div class="wrap">
 		  <div class="inner">
 		    <div id="canvas-minutes" class="clock-canvas"></div>
@@ -132,7 +130,7 @@
 		</div><!-- /.wrap -->
 	      </div><!-- /.clock-item -->
 
-	      <div class="clock-item clock-seconds countdown-time-value col-xs-2 col-md-1">
+	      <div class="clock-item clock-seconds countdown-time-value col-xs-3 col-md-1">
 		<div class="wrap">
 		  <div class="inner">
 		    <div id="canvas-seconds" class="clock-canvas"></div>
@@ -146,9 +144,9 @@
 	      </div><!-- /.clock-item -->
 	    </div><!-- /.clock -->
 	  </div><!-- /.countdown-wrapper -->
-	  <div class="col-xs-0 col-md-4"></div>
+	  <div class="col-xs-1 col-md-4"></div>
 	</div>
-	<a href="#about" class="btn btn-circle page-scroll">
+	<a href="#evenement" class="btn btn-circle page-scroll">
 	  <i class="fa fa-angle-double-down animated"></i>
 	</a>
       </div>	  
@@ -159,10 +157,9 @@
       <div class="row">
 	<div class="col-lg-1"></div>
 	<div class="col-lg-10">
-	  <h2 class="text-center">La Sud-Morvandelle</h2>
-	  <p class="parcours-left">La Sud-Morvandelle est une nouvelle organisation melant a la fois le sport et l'aspect nature. Multiples activites seront organisees au cours d'une journee : randonnee pedestre, randonnee equestre, marche nordique, VTT et trail.</p>
+	  <h2 class="text-center text-title">La Sud-Morvandelle</h2>
+	  <p class="parcours-left">La Sud-Morvandelle est une nouvelle organisation melant a la fois le sport et l'aspect nature. Multiples activites seront organisees au cours d'une journee unique : randonnee pedestre, randonnee equestre, marche nordique, VTT et trail.</p>
 	  <p class="parcours-left">Les randonnees pedestre et VTT seront organisees a depart libre</p>
-	  <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
 	</div>
 	<div class="col-lg-1"></div>
       </div>
@@ -172,13 +169,18 @@
     <section id="parcours" class="content-section">
       <div class="download-section">
 	<div class="container">
-          <h2 class="text-center">Parcours</h2>
-          <!-- <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p> -->
-          <!-- <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a> -->
-
+	  <div class="col-lg-1"></div>
+	  <div class="col-lg-10">
+            <h2 class="text-center text-title">Parcours</h2>
+            <!-- <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p> -->
+            <!-- <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a> -->
+	  </div>
+	  <div class="col-lg-1"></div>
+	</div>
+	<div class="container">
 	  <!-- Parcours Trail -->
-	  <div class="row">
-	    <p class="parcours-left text-blue">Trail, Marche nordique, VTT :</p>
+	  <div class="row map-section">
+	    <p class="parcours-left">Trail, Marche nordique, VTT :</p>
 	    <div class="col-md-6">
 	      <center><script type="text/javascript" src="http://www.openrunner.com/orservice/inorser-script.php?key=mykey&amp;ser=S09&amp;id=4223667&amp;w=415&amp;h=350&amp;hp=128&amp;k=5&amp;m=0&amp;pa=1&amp;c=0&amp;ts=1427068000"></script></center>
 	    </div>
@@ -188,8 +190,8 @@
 	  </div>
 
 	  <!-- Parcours randonnees-->
-	  <div class="row">
-	    <p class="parcours-left text-blue">Randonnee Pedestre :</p>
+	  <div class="row map-section">
+	    <p class="parcours-left">Randonnee Pedestre :</p>
 	    <div class="col-md-4">
 	      <center><script type="text/javascript" src="http://www.openrunner.com/orservice/inorser-script.php?key=mykey&amp;ser=S09&amp;id=4225761&amp;w=415&amp;h=350&amp;hp=128&amp;k=5&amp;m=0&amp;pa=1&amp;c=0&amp;ts=1427068207"></script></center>
 	    </div>
@@ -200,42 +202,91 @@
 	      <center><script type="text/javascript" src="http://www.openrunner.com/orservice/inorser-script.php?key=mykey&amp;ser=S09&amp;id=4225758&amp;w=415&amp;h=350&amp;hp=128&amp;k=5&amp;m=0&amp;pa=1&amp;c=0&amp;ts=1427068303"></script></center>
 	    </div>
 	  </div>
+	  <div class="col-lg-1"></div>
 	</div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <section id="contact" class="container content-section">
       <div class="row">
-	<div class="col-lg-8 col-lg-offset-2">
-	  <h2>Contact Start Bootstrap</h2>
-	  <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-	  <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-	  </p>
-	  <ul class="list-inline banner-social-buttons">
-            <li>
-              <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-            </li>
-            <li>
-              <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-            </li>
-            <li>
-              <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-            </li>
-	  </ul>
+	<div class="col-lg-1"></div>
+	<div class="col-lg-10">
+	  <h2 class="text-center text-title">Contact</h2>
 	</div>
+	<div class="col-lg-1"></div>
       </div>
+      <br>
+      <div class="row">
+	<div class="col-lg-4">
+	  <div class="panel panel-primary" id="contact2">
+	    <div class="panel-heading">
+	      <h3 class="panel-title text-center">Cedric Lemaitre</h3>
+	    </div>
+	    <div class="panel-body">
+	      <address class="text-center">
+		La Mouille Guerin,<br>
+		71120 Saint Julien Sur Dheune<br>
+		<abbr title="Phone">P:</abbr> 06.72.71.55.84<br>
+		<a href="mailto:c.lemaitre58@gmail.com">c.lemaitre58@gmail.com</a>
+	      </address>
+	    </div>
+	  </div>
+	</div>
+	<div class="col-lg-4">
+	  <div class="panel panel-primary" id="contact2">
+	    <div class="panel-heading">
+	      <h3 class="panel-title text-center">Ginette Lemaitre</h3>
+	    </div>
+	    <div class="panel-body">
+	      <address class="text-center">
+		8 Place Andriot Guerin,<br>
+		58170 Luzy<br>
+		<abbr title="Phone">P:</abbr> 03.86.30.08.31<br>
+		<a href="mailto:patrice.lemaitre58@free.fr">patrice.lemaitre58@free.fr</a>
+	      </address>
+	    </div>
+	  </div>
+	</div>
+	<div class="col-lg-4">
+	  <div class="panel panel-primary" id="contact2">
+	    <div class="panel-heading">
+	      <h3 class="panel-title text-center">Guillaume Lemaitre</h3>
+	    </div>
+	    <div class="panel-body">
+	      <address class="text-center">
+		45 Rue Anatole France,<br>
+		71200 Le Creusot<br>
+		<abbr title="Phone">P:</abbr> 07.61.10.47.82<br>
+		<a href="mailto:g.lemaitre58@gmail.com">g.lemaitre58@gmail.com</a>
+	      </address>
+	    </div>
+	  </div>
+	</div>
     </section>
 
     <!-- Map Section -->
     <div id="map"></div>
 
     <!-- Footer -->
-    <footer>
-      <div class="container text-center">
-	<p>Copyright &copy; Your Website 2014</p>
+    <div class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+	<div class="row">
+	  <div class="col-md-2"></div>
+	  <div class="col-md-2"><img class="center" src="./img/parc.png" height="50px"></div>
+	  <div class="col-md-2"><img class="center" src="./img/ufolep.png" height="50px"></div>
+	  <div class="col-md-2"><img class="center" src="./img/fours.png" height="50px"></div>
+	  <div class="col-md-2"><img class="center" src="./img/luzy.png" height="50px"></div>
+	  <div class="col-md-2"></div>
+	</div>
+	<div class="row">
+	  <div class="text-footer">
+	    &copy; 2015 - ASC Fours - Guillaume Lemaitre
+	  </div>
+	</div>
       </div>
-    </footer>
-
+    </div>
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -248,6 +299,12 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
 
+    <!-- <\!-- SmartMenus jQuery plugin -\-> -->
+    <!-- <script type="text/javascript" src="js/jquery.smartmenus.js"></script> -->
+
+    <!-- <\!-- SmartMenus jQuery Bootstrap Addon -\-> -->
+    <!-- <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script> -->
+
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
@@ -259,7 +316,7 @@
     <script type="text/javascript">
       $('.countdown').final_countdown({
       'start': new Date()/1000,
-      'end': 1434067199,
+      'end': 1436626800,
       'now': new Date()/1000
       });
     </script>
