@@ -164,7 +164,7 @@
 	  <div class="row">
 	    <div class="col-md-3"></div>
 	    <div class="col-md-6">
-	      <div class="col-md-6" id="googleMap" style="width:100%;height:380px;"></div>
+	      <div class="col-md-6" id="grandeHalle" style="width:100%;height:380px;"></div>
 	    </div>
 	    <div class="col-md-3"></div>
 	  </div>
@@ -246,7 +246,7 @@
 	  <div class="row">
 	    <h3 class="text-subtitle parcours-left">Trail, Marche nordique, VTT :</h3>
 	    <div class="col-md-6">
-	      <center><script type="text/javascript" src="http://www.openrunner.com/orservice/inorser-script.php?key=mykey&amp;ser=S09&amp;id=4223667&amp;w=100%&amp;h=350&amp;hp=128&amp;k=5&amp;m=0&amp;pa=1&amp;c=0&amp;ts=1427068000"></script></center>
+	      <!-- <center><script type="text/javascript" src="http://www.openrunner.com/orservice/inorser-script.php?key=mykey&amp;ser=S09&amp;id=4223667&amp;w=100%&amp;h=350&amp;hp=128&amp;k=5&amp;m=0&amp;pa=1&amp;c=0&amp;ts=1427068000"></script></center>-->
 	    </div>
 	    <div class="col-md-6">
  	      <div class="col-md-6" id="trail46km" style="width:100%;height:380px;"></div>
@@ -385,7 +385,7 @@
       // weight = thickness of line, defaults to 6
       function polyline(m,coords,color,opacity,weight)
       {
-      if(!color) color = '#ff0000';
+      if(!color) color = '#21819d';
       if(!opacity) opacity = 0.5;
       if(!weight) weight = 6;
       return new google.maps.Polyline(
@@ -401,7 +401,116 @@
       var mapProp = {
       center:new google.maps.LatLng(46.79197, 3.94992),
       zoom:13,
-      mapTypeId:google.maps.MapTypeId.ROADMAP
+      <!-- mapTypeId:google.maps.MapTypeId.ROADMAP -->
+            styles: [{
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }]
+        }, {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 29
+            }, {
+                "weight": 0.2
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 18
+            }]
+        }, {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 16
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 21
+            }]
+        }, {
+            "elementType": "labels.text.stroke",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#000000"
+            }, {
+                "lightness": 16
+            }]
+        }, {
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "saturation": 36
+            }, {
+                "color": "#000000"
+            }, {
+                "lightness": 40
+            }]
+        }, {
+            "elementType": "labels.icon",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 19
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }, {
+                "weight": 1.2
+            }]
+     }]
+
       };
       var map=new google.maps.Map(document.getElementById("rand7km"), mapProp);
             polyline(map,
@@ -527,7 +636,7 @@
       // weight = thickness of line, defaults to 6
       function polyline(m,coords,color,opacity,weight)
       {
-      if(!color) color = '#ff0000';
+      if(!color) color = '#21819d';
       if(!opacity) opacity = 0.5;
       if(!weight) weight = 6;
       return new google.maps.Polyline(
@@ -543,7 +652,116 @@
       var mapProp = {
       center:new google.maps.LatLng(46.78653, 3.95407),
       zoom:13,
-      mapTypeId:google.maps.MapTypeId.ROADMAP
+      <!-- mapTypeId:google.maps.MapTypeId.ROADMAP -->
+            styles: [{
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }]
+        }, {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 29
+            }, {
+                "weight": 0.2
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 18
+            }]
+        }, {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 16
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 21
+            }]
+        }, {
+            "elementType": "labels.text.stroke",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#000000"
+            }, {
+                "lightness": 16
+            }]
+        }, {
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "saturation": 36
+            }, {
+                "color": "#000000"
+            }, {
+                "lightness": 40
+            }]
+        }, {
+            "elementType": "labels.icon",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 19
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }, {
+                "weight": 1.2
+            }]
+     }]
+
       };
       var map=new google.maps.Map(document.getElementById("rand10km"), mapProp);
       polyline(map,
@@ -716,7 +934,7 @@
       // weight = thickness of line, defaults to 6
       function polyline(m,coords,color,opacity,weight)
       {
-      if(!color) color = '#ff0000';
+      if(!color) color = '#21819d';
       if(!opacity) opacity = 0.5;
       if(!weight) weight = 6;
       return new google.maps.Polyline(
@@ -732,7 +950,116 @@
       var mapProp = {
       center:new google.maps.LatLng(46.78337, 3.96218),
       zoom:13,
-      mapTypeId:google.maps.MapTypeId.ROADMAP
+      <!-- mapTypeId:google.maps.MapTypeId.ROADMAP -->
+            styles: [{
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }]
+        }, {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 29
+            }, {
+                "weight": 0.2
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 18
+            }]
+        }, {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 16
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 21
+            }]
+        }, {
+            "elementType": "labels.text.stroke",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#000000"
+            }, {
+                "lightness": 16
+            }]
+        }, {
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "saturation": 36
+            }, {
+                "color": "#000000"
+            }, {
+                "lightness": 40
+            }]
+        }, {
+            "elementType": "labels.icon",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 19
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }, {
+                "weight": 1.2
+            }]
+     }]
+
       };
       var map=new google.maps.Map(document.getElementById("rand17km"), mapProp);
       polyline(map,
@@ -911,7 +1238,7 @@
       // weight = thickness of line, defaults to 6
       function polyline(m,coords,color,opacity,weight)
       {
-      if(!color) color = '#ff0000';
+      if(!color) color = '#21819d';
       if(!opacity) opacity = 0.5;
       if(!weight) weight = 6;
       return new google.maps.Polyline(
@@ -925,9 +1252,117 @@
 
       function initialize() {
       var mapProp = {
-      center:new google.maps.LatLng(46.78337, 3.96218),
-      zoom:13,
-      mapTypeId:google.maps.MapTypeId.ROADMAP
+      center:new google.maps.LatLng(46.86, 3.98),
+      zoom:11,
+            styles: [{
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }]
+        }, {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 29
+            }, {
+                "weight": 0.2
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 18
+            }]
+        }, {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 16
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 21
+            }]
+        }, {
+            "elementType": "labels.text.stroke",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#000000"
+            }, {
+                "lightness": 16
+            }]
+        }, {
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "saturation": 36
+            }, {
+                "color": "#000000"
+            }, {
+                "lightness": 40
+            }]
+        }, {
+            "elementType": "labels.icon",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 19
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }, {
+                "weight": 1.2
+            }]
+     }]
+
       };
       var map=new google.maps.Map(document.getElementById("trail46km"), mapProp);
       polyline(map,
@@ -996,37 +1431,37 @@
       coord(46.83752,3.99757),
       coord(46.83819,3.99885),
       coord(46.83916,3.99976),
-      coord(46.839924.00038),
-      coord(46.840744.00051),
-      coord(46.842154.00085),
-      coord(46.842644.00079),
-      coord(46.84324.00149),
-      coord(46.843534.00237),
-      coord(46.844024.00285),
-      coord(46.844814.0027),
-      coord(46.845974.00237),
-      coord(46.846664.0024),
-      coord(46.847924.00278),
-      coord(46.848634.00312),
-      coord(46.849574.00304),
-      coord(46.850184.00259),
-      coord(46.850674.00323),
-      coord(46.851474.00323),
-      coord(46.852214.00289),
-      coord(46.853044.00308),
-      coord(46.854174.00396),
-      coord(46.85574.00501),
-      coord(46.856874.0057),
-      coord(46.857774.00557),
-      coord(46.858214.00557),
-      coord(46.858414.00473),
-      coord(46.858274.00422),
-      coord(46.857994.00377),
-      coord(46.858384.00347),
-      coord(46.85914.00345),
-      coord(46.859244.00272),
-      coord(46.859654.00199),
-      coord(46.860824.00046),
+      coord(46.83992,4.00038),
+      coord(46.84074,4.00051),
+      coord(46.84215,4.00085),
+      coord(46.84264,4.00079),
+      coord(46.8432,4.00149),
+      coord(46.84353,4.00237),
+      coord(46.84402,4.00285),
+      coord(46.84481,4.0027),
+      coord(46.84597,4.00237),
+      coord(46.84666,4.0024),
+      coord(46.84792,4.00278),
+      coord(46.84863,4.00312),
+      coord(46.84957,4.00304),
+      coord(46.85018,4.00259),
+      coord(46.85067,4.00323),
+      coord(46.85147,4.00323),
+      coord(46.85221,4.00289),
+      coord(46.85304,4.00308),
+      coord(46.85417,4.00396),
+      coord(46.8557,4.00501),
+      coord(46.85687,4.0057),
+      coord(46.85777,4.00557),
+      coord(46.85821,4.00557),
+      coord(46.85841,4.00473),
+      coord(46.85827,4.00422),
+      coord(46.85799,4.00377),
+      coord(46.85838,4.00347),
+      coord(46.8591,4.00345),
+      coord(46.85924,4.00272),
+      coord(46.85965,4.00199),
+      coord(46.86082,4.00046),
       coord(46.86151,3.99969),
       coord(46.86287,3.99928),
       coord(46.8634,3.9992),
@@ -1039,153 +1474,153 @@
       coord(46.86942,3.9984),
       coord(46.8704,3.99924),
       coord(46.87088,3.99997),
-      coord(46.871124.00145),
-      coord(46.871874.00207),
-      coord(46.872854.00179),
-      coord(46.873384.00265),
-      coord(46.873924.00358),
-      coord(46.874174.00422),
-      coord(46.874494.00334),
-      coord(46.875554.00302),
-      coord(46.87644.00295),
-      coord(46.876854.00246),
-      coord(46.87754.00207),
-      coord(46.877764.00248),
-      coord(46.877654.00319),
-      coord(46.878094.00482),
-      coord(46.8784.00589),
-      coord(46.877824.00662),
-      coord(46.877414.00765),
-      coord(46.87714.00842),
-      coord(46.877594.00903),
-      coord(46.878264.00954),
-      coord(46.878194.01068),
-      coord(46.878584.0119),
-      coord(46.879684.0127),
-      coord(46.880424.01345),
-      coord(46.881374.01321),
-      coord(46.882354.01349),
-      coord(46.88344.01355),
-      coord(46.88474.01308),
-      coord(46.885624.01351),
-      coord(46.886434.01345),
-      coord(46.887164.01276),
-      coord(46.888754.01261),
-      coord(46.890044.0127),
-      coord(46.891184.013),
-      coord(46.892084.01263),
-      coord(46.893064.01248),
-      coord(46.893794.01254),
-      coord(46.89524.01261),
-      coord(46.896534.01222),
-      coord(46.898444.01175),
-      coord(46.899644.01119),
-      coord(46.90174.01094),
-      coord(46.90264.01113),
-      coord(46.903794.01186),
-      coord(46.905464.01068),
-      coord(46.906314.01117),
-      coord(46.907244.01182),
-      coord(46.907384.01242),
-      coord(46.909234.01409),
-      coord(46.909884.01491),
-      coord(46.910734.01525),
-      coord(46.911374.01619),
-      coord(46.912194.01636),
-      coord(46.912724.01714),
-      coord(46.912664.01769),
-      coord(46.915214.01928),
-      coord(46.916944.02164),
-      coord(46.919434.0237),
-      coord(46.918764.024),
-      coord(46.919464.02529),
-      coord(46.919024.02598),
-      coord(46.919684.02735),
-      coord(46.920174.02864),
-      coord(46.921194.02864),
-      coord(46.922094.02945),
-      coord(46.923014.03138),
-      coord(46.923514.03216),
-      coord(46.924254.03151),
-      coord(46.924474.03033),
-      coord(46.925274.02939),
-      coord(46.926394.02922),
-      coord(46.927084.02922),
-      coord(46.928154.02984),
-      coord(46.929094.03083),
-      coord(46.929724.03192),
-      coord(46.930044.03304),
-      coord(46.930174.03405),
-      coord(46.930264.0351),
-      coord(46.930854.0343),
-      coord(46.931264.03319),
-      coord(46.931744.0322),
-      coord(46.932974.03076),
-      coord(46.933954.03046),
-      coord(46.934954.03089),
-      coord(46.936094.03181),
-      coord(46.937254.03263),
-      coord(46.937734.03323),
-      coord(46.938314.034),
-      coord(46.939274.03443),
-      coord(46.939684.0339),
-      coord(46.939354.03334),
-      coord(46.938974.03261),
-      coord(46.938454.03162),
-      coord(46.937974.03089),
-      coord(46.937624.02986),
-      coord(46.937374.02954),
-      coord(46.936974.02881),
-      coord(46.936914.02746),
-      coord(46.93684.02611),
-      coord(46.936434.02495),
-      coord(46.936084.02415),
-      coord(46.935634.02259),
-      coord(46.935464.02128),
-      coord(46.935294.01986),
-      coord(46.935074.01913),
-      coord(46.934484.01827),
-      coord(46.933754.01765),
-      coord(46.933124.01709),
-      coord(46.932284.01727),
-      coord(46.931634.01761),
-      coord(46.931074.01784),
-      coord(46.930344.01763),
-      coord(46.929544.01722),
-      coord(46.928314.01742),
-      coord(46.927574.01742),
-      coord(46.927054.01686),
-      coord(46.926544.01621),
-      coord(46.925854.01555),
-      coord(46.925124.01495),
-      coord(46.924534.01486),
-      coord(46.923894.01488),
-      coord(46.923524.01533),
-      coord(46.923244.01445),
-      coord(46.922894.01338),
-      coord(46.922474.0127),
-      coord(46.922114.01205),
-      coord(46.921264.01121),
-      coord(46.920594.01087),
-      coord(46.919954.01081),
-      coord(46.919144.01098),
-      coord(46.918734.01096),
-      coord(46.918384.01023),
-      coord(46.9184.0092),
-      coord(46.91724.00808),
-      coord(46.916784.00772),
-      coord(46.916444.00718),
-      coord(46.916444.00662),
-      coord(46.916494.00576),
-      coord(46.916824.00473),
-      coord(46.91724.00415),
-      coord(46.91774.00426),
-      coord(46.917784.00308),
-      coord(46.917644.00177),
-      coord(46.91774.00102),
+      coord(46.87112,4.00145),
+      coord(46.87187,4.00207),
+      coord(46.87285,4.00179),
+      coord(46.87338,4.00265),
+      coord(46.87392,4.00358),
+      coord(46.87417,4.00422),
+      coord(46.87449,4.00334),
+      coord(46.87555,4.00302),
+      coord(46.8764,4.00295),
+      coord(46.87685,4.00246),
+      coord(46.8775,4.00207),
+      coord(46.87776,4.00248),
+      coord(46.87765,4.00319),
+      coord(46.87809,4.00482),
+      coord(46.878,4.00589),
+      coord(46.87782,4.00662),
+      coord(46.87741,4.00765),
+      coord(46.8771,4.00842),
+      coord(46.87759,4.00903),
+      coord(46.87826,4.00954),
+      coord(46.87819,4.01068),
+      coord(46.87858,4.0119),
+      coord(46.87968,4.0127),
+      coord(46.88042,4.01345),
+      coord(46.88137,4.01321),
+      coord(46.88235,4.01349),
+      coord(46.8834,4.01355),
+      coord(46.8847,4.01308),
+      coord(46.88562,4.01351),
+      coord(46.88643,4.01345),
+      coord(46.88716,4.01276),
+      coord(46.88875,4.01261),
+      coord(46.89004,4.0127),
+      coord(46.89118,4.013),
+      coord(46.89208,4.01263),
+      coord(46.89306,4.01248),
+      coord(46.89379,4.01254),
+      coord(46.8952,4.01261),
+      coord(46.89653,4.01222),
+      coord(46.89844,4.01175),
+      coord(46.89964,4.01119),
+      coord(46.9017,4.01094),
+      coord(46.9026,4.01113),
+      coord(46.90379,4.01186),
+      coord(46.90546,4.01068),
+      coord(46.90631,4.01117),
+      coord(46.90724,4.01182),
+      coord(46.90738,4.01242),
+      coord(46.90923,4.01409),
+      coord(46.90988,4.01491),
+      coord(46.91073,4.01525),
+      coord(46.91137,4.01619),
+      coord(46.91219,4.01636),
+      coord(46.91272,4.01714),
+      coord(46.91266,4.01769),
+      coord(46.91521,4.01928),
+      coord(46.91694,4.02164),
+      coord(46.91943,4.0237),
+      coord(46.91876,4.024),
+      coord(46.91946,4.02529),
+      coord(46.91902,4.02598),
+      coord(46.91968,4.02735),
+      coord(46.92017,4.02864),
+      coord(46.92119,4.02864),
+      coord(46.92209,4.02945),
+      coord(46.92301,4.03138),
+      coord(46.92351,4.03216),
+      coord(46.92425,4.03151),
+      coord(46.92447,4.03033),
+      coord(46.92527,4.02939),
+      coord(46.92639,4.02922),
+      coord(46.92708,4.02922),
+      coord(46.92815,4.02984),
+      coord(46.92909,4.03083),
+      coord(46.92972,4.03192),
+      coord(46.93004,4.03304),
+      coord(46.93017,4.03405),
+      coord(46.93026,4.0351),
+      coord(46.93085,4.0343),
+      coord(46.93126,4.03319),
+      coord(46.93174,4.0322),
+      coord(46.93297,4.03076),
+      coord(46.93395,4.03046),
+      coord(46.93495,4.03089),
+      coord(46.93609,4.03181),
+      coord(46.93725,4.03263),
+      coord(46.93773,4.03323),
+      coord(46.93831,4.034),
+      coord(46.93927,4.03443),
+      coord(46.93968,4.0339),
+      coord(46.93935,4.03334),
+      coord(46.93897,4.03261),
+      coord(46.93845,4.03162),
+      coord(46.93797,4.03089),
+      coord(46.93762,4.02986),
+      coord(46.93737,4.02954),
+      coord(46.93697,4.02881),
+      coord(46.93691,4.02746),
+      coord(46.9368,4.02611),
+      coord(46.93643,4.02495),
+      coord(46.93608,4.02415),
+      coord(46.93563,4.02259),
+      coord(46.93546,4.02128),
+      coord(46.93529,4.01986),
+      coord(46.93507,4.01913),
+      coord(46.93448,4.01827),
+      coord(46.93375,4.01765),
+      coord(46.93312,4.01709),
+      coord(46.93228,4.01727),
+      coord(46.93163,4.01761),
+      coord(46.93107,4.01784),
+      coord(46.93034,4.01763),
+      coord(46.92954,4.01722),
+      coord(46.92831,4.01742),
+      coord(46.92757,4.01742),
+      coord(46.92705,4.01686),
+      coord(46.92654,4.01621),
+      coord(46.92585,4.01555),
+      coord(46.92512,4.01495),
+      coord(46.92453,4.01486),
+      coord(46.92389,4.01488),
+      coord(46.92352,4.01533),
+      coord(46.92324,4.01445),
+      coord(46.92289,4.01338),
+      coord(46.92247,4.0127),
+      coord(46.92211,4.01205),
+      coord(46.92126,4.01121),
+      coord(46.92059,4.01087),
+      coord(46.91995,4.01081),
+      coord(46.91914,4.01098),
+      coord(46.91873,4.01096),
+      coord(46.91838,4.01023),
+      coord(46.918,4.0092),
+      coord(46.9172,4.00808),
+      coord(46.91678,4.00772),
+      coord(46.91644,4.00718),
+      coord(46.91644,4.00662),
+      coord(46.91649,4.00576),
+      coord(46.91682,4.00473),
+      coord(46.9172,4.00415),
+      coord(46.9177,4.00426),
+      coord(46.91778,4.00308),
+      coord(46.91764,4.00177),
+      coord(46.9177,4.00102),
       coord(46.91772,3.99971),
       coord(46.91741,3.99954),
-      coord(46.917094.00001),
+      coord(46.91709,4.00001),
       coord(46.9169,3.99958),
       coord(46.91676,3.99849),
       coord(46.91675,3.9974),
@@ -1403,14 +1838,6 @@
       var mapProp = {
       center:new google.maps.LatLng(46.79003, 3.966494),
       zoom:16,
-      
-      // Disables the default Google Maps UI components
-      disableDefaultUI: true,
-      scrollwheel: false,
-      draggable: false,
-
-      // How you would like to style the map. 
-      // This is where you would paste any style found on Snazzy Maps.
       styles: [{
             "featureType": "water",
             "elementType": "geometry",
@@ -1518,21 +1945,159 @@
             }, {
                 "weight": 1.2
             }]
-        }]
+     }]
       };
-      var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      var map=new google.maps.Map(document.getElementById("grandeHalle"), mapProp);
 
-	// Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-	var image = 'img/map-marker.png';
-	var myLatLng = new google.maps.LatLng(coord(46.79003, 3.966494);
-	var beachMarker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        icon: image
-	});
+      // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
+      var image = 'img/map-marker.png';
+      var myLatLng = new google.maps.LatLng(46.79003, 3.966494);
+      var beachMarker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      icon: image
+      });
+
       }
-      google.maps.event.addDomListener(window, 'load', initialize);
+      google.maps.event.addDomListener(window, 'load', initialize);      
     </script>
+
+
+    <!-- <script> -->
+    <!--   function initialize() { -->
+    <!--   var mapProp = { -->
+    <!--   center:new google.maps.LatLng(46.79003, 3.966494), -->
+    <!--   zoom:16, -->
+      
+    <!--   // Disables the default Google Maps UI components -->
+    <!--   disableDefaultUI: true, -->
+    <!--   scrollwheel: false, -->
+    <!--   draggable: false, -->
+
+    <!--   // How you would like to style the map.  -->
+    <!--   // This is where you would paste any style found on Snazzy Maps. -->
+    <!--   styles: [{ -->
+    <!--         "featureType": "water", -->
+    <!--         "elementType": "geometry", -->
+    <!--         "stylers": [{ -->
+    <!--             "color": "#000000" -->
+    <!--         }, { -->
+    <!--             "lightness": 17 -->
+    <!--         }] -->
+    <!--     }, { -->
+    <!--         "featureType": "landscape", -->
+    <!--         "elementType": "geometry", -->
+    <!--         "stylers": [{ -->
+    <!--             "color": "#000000" -->
+    <!--         }, { -->
+    <!--             "lightness": 20 -->
+    <!--         }] -->
+    <!--     }, { -->
+    <!--         "featureType": "road.highway", -->
+    <!--         "elementType": "geometry.fill", -->
+    <!--         "stylers": [{ -->
+    <!--             "color": "#000000" -->
+    <!--         }, { -->
+    <!--             "lightness": 17 -->
+    <!--         }] -->
+    <!--     }, { -->
+    <!--         "featureType": "road.highway", -->
+    <!--         "elementType": "geometry.stroke", -->
+    <!--         "stylers": [{ -->
+    <!--             "color": "#000000" -->
+    <!--         }, { -->
+    <!--             "lightness": 29 -->
+    <!--         }, { -->
+    <!--             "weight": 0.2 -->
+    <!--         }] -->
+    <!--     }, { -->
+    <!--         "featureType": "road.arterial", -->
+    <!--         "elementType": "geometry", -->
+    <!--         "stylers": [{ -->
+    <!--             "color": "#000000" -->
+    <!--         }, { -->
+    <!--             "lightness": 18 -->
+    <!--         }] -->
+    <!--     }, { -->
+    <!--         "featureType": "road.local", -->
+    <!--         "elementType": "geometry", -->
+    <!--         "stylers": [{ -->
+    <!--             "color": "#000000" -->
+    <!--         }, { -->
+    <!--             "lightness": 16 -->
+    <!--         }] -->
+    <!--     }, { -->
+    <!--         "featureType": "poi", -->
+    <!--         "elementType": "geometry", -->
+    <!--         "stylers": [{ -->
+    <!--             "color": "#000000" -->
+    <!--         }, { -->
+    <!--             "lightness": 21 -->
+    <!--         }] -->
+    <!--     }, { -->
+    <!--         "elementType": "labels.text.stroke", -->
+    <!--         "stylers": [{ -->
+    <!--             "visibility": "on" -->
+    <!--         }, { -->
+    <!--             "color": "#000000" -->
+    <!--         }, { -->
+    <!--             "lightness": 16 -->
+    <!--         }] -->
+    <!--     }, { -->
+    <!--         "elementType": "labels.text.fill", -->
+    <!--         "stylers": [{ -->
+    <!--             "saturation": 36 -->
+    <!--         }, { -->
+    <!--             "color": "#000000" -->
+    <!--         }, { -->
+    <!--             "lightness": 40 -->
+    <!--         }] -->
+    <!--     }, { -->
+    <!--         "elementType": "labels.icon", -->
+    <!--         "stylers": [{ -->
+    <!--             "visibility": "off" -->
+    <!--         }] -->
+    <!--     }, { -->
+    <!--         "featureType": "transit", -->
+    <!--         "elementType": "geometry", -->
+    <!--         "stylers": [{ -->
+    <!--             "color": "#000000" -->
+    <!--         }, { -->
+    <!--             "lightness": 19 -->
+    <!--         }] -->
+    <!--     }, { -->
+    <!--         "featureType": "administrative", -->
+    <!--         "elementType": "geometry.fill", -->
+    <!--         "stylers": [{ -->
+    <!--             "color": "#000000" -->
+    <!--         }, { -->
+    <!--             "lightness": 20 -->
+    <!--         }] -->
+    <!--     }, { -->
+    <!--         "featureType": "administrative", -->
+    <!--         "elementType": "geometry.stroke", -->
+    <!--         "stylers": [{ -->
+    <!--             "color": "#000000" -->
+    <!--         }, { -->
+    <!--             "lightness": 17 -->
+    <!--         }, { -->
+    <!--             "weight": 1.2 -->
+    <!--         }] -->
+    <!--     }] -->
+    <!--   }; -->
+    <!--   var map=new google.maps.Map(document.getElementById("googleMap"),mapProp); -->
+
+    <!-- 	// Custom Map Marker Icon - Customize the map-marker.png file to customize your icon -->
+    <!-- 	var image = 'img/map-marker.png'; -->
+    <!-- 	var myLatLng = new google.maps.LatLng(coord(46.79003, 3.966494); -->
+    <!-- 	var beachMarker = new google.maps.Marker({ -->
+    <!--     position: myLatLng, -->
+    <!--     map: map, -->
+    <!--     icon: image -->
+    <!-- 	}); -->
+    <!--   } -->
+    <!--   google.maps.event.addDomListener(window, 'load', initialize); -->
+    <!-- </script> -->
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
