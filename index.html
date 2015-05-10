@@ -34,6 +34,143 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+      var mapProp = {
+      center:new google.maps.LatLng(46.79003, 3.966494),
+      zoom:16,
+      
+      // Disables the default Google Maps UI components
+      disableDefaultUI: true,
+      scrollwheel: false,
+      draggable: false,
+
+      // How you would like to style the map. 
+      // This is where you would paste any style found on Snazzy Maps.
+      styles: [{
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }]
+        }, {
+            "featureType": "landscape",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }]
+        }, {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 29
+            }, {
+                "weight": 0.2
+            }]
+        }, {
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 18
+            }]
+        }, {
+            "featureType": "road.local",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 16
+            }]
+        }, {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 21
+            }]
+        }, {
+            "elementType": "labels.text.stroke",
+            "stylers": [{
+                "visibility": "on"
+            }, {
+                "color": "#000000"
+            }, {
+                "lightness": 16
+            }]
+        }, {
+            "elementType": "labels.text.fill",
+            "stylers": [{
+                "saturation": 36
+            }, {
+                "color": "#000000"
+            }, {
+                "lightness": 40
+            }]
+        }, {
+            "elementType": "labels.icon",
+            "stylers": [{
+                "visibility": "off"
+            }]
+        }, {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 19
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.fill",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 20
+            }]
+        }, {
+            "featureType": "administrative",
+            "elementType": "geometry.stroke",
+            "stylers": [{
+                "color": "#000000"
+            }, {
+                "lightness": 17
+            }, {
+                "weight": 1.2
+            }]
+        }]
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+	// Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
+	var image = 'img/map-marker.png';
+	var myLatLng = new google.maps.LatLng(46.79003, 3.966494);
+	var beachMarker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        icon: image
+	});
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
   </head>
 
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -158,9 +295,67 @@
 	<div class="col-lg-1"></div>
 	<div class="col-lg-10">
 	  <h2 class="text-center text-title">La Sud-Morvandelle</h2>
-	  <p class="parcours-left">La Sud-Morvandelle est une nouvelle organisation melant a la fois le sport et l'aspect nature. Multiples activites seront organisees au cours d'une journee unique : randonnee pedestre, randonnee equestre, marche nordique, VTT et trail.</p>
-	  <p class="parcours-left">Les randonnees pedestre et VTT seront organisees a depart libre</p>
-	</div>
+	  <p class="parcours-left">La Sud-Morvandelle est une nouvelle organisation melant a la fois le sport et l'aspect nature. Multiples activites seront organisees au cours d'une journee unique : randonnee pedestre, randonnee equestre, marche nordique, VTT et trail.</p>	  
+	  <p class="parcours-left">Les departs seront donnes a partir de la <strong>Grande Halle</strong> de LUZY.</p>
+	  <div class="row">
+	    <div class="col-md-3"></div>
+	    <div class="col-md-6">
+	      <div id="googleMap" style="width:500px;height:380px;"></div>
+	    </div>
+	    <div class="col-md-3"></div>
+	  </div>
+	  <br>
+	  <p class="parcours-left">Make some comments about the food and stuff like that.</p>
+	  <h3 class="text-subtitle">Trail en semi-nocturne :</h3>
+	  <p class="parcours-left"></p>
+	  <ul class="parcours-left">
+	    <li><strong>Heure de depart : </strong> 18 h 00</li>
+	    <li><strong>Kilometrage : </strong> 50 km - 25 km </li>
+	    <li><strong>Denivele : </strong> 1800 m D+ - 600 m D+ </li>
+	    <li><strong>Ravitaillements : </strong> Chaque 10 km </li>
+	  </ul>
+	  <p class="parcours-left">Make some explanations about the cuts and the required materials.</p>
+	  <h3 class="text-subtitle">Velo Tout Terrain :</h3>
+	  <ul class="parcours-left">
+	    <li><strong>Heure de depart : </strong> de 16 h 00 a 18 h 00</li>
+	    <li><strong>Kilometrage : </strong> 50 km - 25 km </li>
+	    <li><strong>Denivele : </strong> 1800 m D+ - 600 m D+ </li>
+	    <li><strong>Ravitaillements : </strong> Chaque 10 km </li>
+	  </ul>
+	  <p class="parcours-left">Make some explanations about the cuts and the required materials.</p>
+	  <h3 class="text-subtitle">Randonnee pedestre :</h3>
+	  <ul class="parcours-left">
+	    <li><strong>Heure de depart : </strong> de 15 h 00 a 19 h00</li>
+	    <li><strong>Kilometrage : </strong> 7 km - 12 km - 17 km </li>
+	    <li><strong>Ravitaillements : </strong> Chaque 10 km </li>
+	  </ul>
+	  <p class="parcours-left"></p>
+	  <h3 class="text-subtitle">Marche nordique :</h3>
+	  <p class="parcours-left">Des demonstrations auront lieu entre 16 h 00 et 19 h 00.</p>
+	  <p class="parcours-left">Les details de l'epreuve chronometree sont les suivants :</p>
+	  <ul class="parcours-left">
+	    <li><strong>Heure de depart : </strong> 18 h 00</li>
+	    <li><strong>Kilometrage : </strong> 50 km - 25 km </li>
+	    <li><strong>Denivele : </strong> 1800 m D+- 600 m D+ </li>
+	    <li><strong>Ravitaillements : </strong> Chaque 10 km </li>
+	  </ul>
+	  <p class="parcours-left"></p>
+	  <!-- <h3 class="text-subtitle">Randonnee equestre :</h3> -->
+	  <!-- <ul class="parcours-left"> -->
+	  <!--   <li><strong>Heure de depart : </strong> 18 h 00</li> -->
+	  <!--   <li><strong>Kilometrage : </strong> 50 km - 25 km </li> -->
+	  <!--   <li><strong>Denivele : </strong> 1800 m D+- 600 m D+ </li> -->
+	  <!--   <li><strong>Ravitaillements : </strong> Chaque 10 km </li> -->
+	  <!-- </ul> -->
+	  <h3 class="text-subtitle">Village depart :</h3>
+	  <p class="parcours-left"></p>
+	  <ul class="parcours-left">
+	    <li><strong>Horaire : </strong> de 15 h 00 a 22 h 00</li>
+	    <li><strong>Lieu : </strong> Grande Halle</li>
+	    <li>Stands materiel et equipement</li>
+	    <li>Exposition de produits du terroir</li>
+	    <li>Stands du bien-etre</li>
+	  </ul>
 	<div class="col-lg-1"></div>
       </div>
     </section>
@@ -180,7 +375,7 @@
 	<div class="container">
 	  <!-- Parcours Trail -->
 	  <div class="row map-section">
-	    <p class="parcours-left">Trail, Marche nordique, VTT :</p>
+	    <h3 class="text-subtitle parcours-left">Trail, Marche nordique, VTT :</h3>
 	    <div class="col-md-6">
 	      <center><script type="text/javascript" src="http://www.openrunner.com/orservice/inorser-script.php?key=mykey&amp;ser=S09&amp;id=4223667&amp;w=415&amp;h=350&amp;hp=128&amp;k=5&amp;m=0&amp;pa=1&amp;c=0&amp;ts=1427068000"></script></center>
 	    </div>
@@ -191,7 +386,7 @@
 
 	  <!-- Parcours randonnees-->
 	  <div class="row map-section">
-	    <p class="parcours-left">Randonnee Pedestre :</p>
+	    <h3 class="text-subtitle parcours-left">Randonnee Pedestre :</h3>
 	    <div class="col-md-4">
 	      <center><script type="text/javascript" src="http://www.openrunner.com/orservice/inorser-script.php?key=mykey&amp;ser=S09&amp;id=4225761&amp;w=415&amp;h=350&amp;hp=128&amp;k=5&amp;m=0&amp;pa=1&amp;c=0&amp;ts=1427068207"></script></center>
 	    </div>

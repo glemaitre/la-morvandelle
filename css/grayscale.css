@@ -83,7 +83,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: 'Mishmash BRK', Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -273,7 +273,7 @@ img.center {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
-    font-family: Ubuntu;
+    font-family: Montserrat;
 }
 
 @media(min-width:768px) {
@@ -290,7 +290,7 @@ img.center {
 
     .intro .intro-body .intro-text {
         font-size: 18px;
-	font-family: Ubuntu;
+	font-family: Montserrat;
 	#color: #21819d;
     }
 
@@ -374,10 +374,19 @@ img.center {
     color: #21819d;
 }
 
+.text-subtitle {
+    #border: 1px solid #21819d;
+    color: #21819d;
+    background-color: transparent;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
 .text-title {
     border: 1px solid #21819d;
     color: #21819d;
     background-color: transparent;
+    font-family: 'Mishmash BRK';
 }
 
 .text-footer {
