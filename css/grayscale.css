@@ -198,6 +198,7 @@ a:focus {
     }
 
     .navbar-custom.top-nav-collapse .navbar-brand{
+	font-size: 10px;
 	color: #21819d;
     }
     
