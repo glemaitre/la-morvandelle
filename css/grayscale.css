@@ -472,6 +472,10 @@ img.center {
 	font-family: 'Montserrat';
 	font-size: 20px;
     }
+
+    .clock-item {
+	margin: 0px 10px 0px 10px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -482,7 +486,7 @@ img.center {
 
 @media (max-width: 767px) {
     .clock-item {
-	margin: 0px 30px 30px 30px;
+	margin: 0px 0px 30px 00px;
 	}
 }
 
