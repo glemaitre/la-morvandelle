@@ -47,7 +47,7 @@
 };
 @font-face {
     font-family: 'Mishmash BRK';
-    src: url('../fonts/mishmash.brk.ttf') format('truetype');
+    src: url(https://github.com/glemaitre/la-sud-morvandelle/blob/gh-pages/fonts/mishmash.brk.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
