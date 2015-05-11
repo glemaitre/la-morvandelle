@@ -249,7 +249,7 @@ img.center {
 
 .intro:after {
     content: "";
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/intro-sik.png) no-repeat bottom center scroll;
     opacity: 0.5;
     top: 0;
     left: 0;
