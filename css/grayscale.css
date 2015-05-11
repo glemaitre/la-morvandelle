@@ -49,7 +49,7 @@
     font-family: 'Mishmash BRK';
     font-weight: normal;
     font-style: normal;
-    src: url(http://ascfours.free.fr/tmp2/fonts/mishmash.woff) format('woff');
+    src: url('../fonts/mishmash.brk.ttf?v=1.01') format('truetype');
 }
 
 body {
