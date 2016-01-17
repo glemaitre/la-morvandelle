@@ -566,9 +566,21 @@ img.center {
     font-size: 10pt;
 }
 
+.parcours-center {
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-size: 10pt;
+}
+
 @media(min-width:767px) {
     .parcours-left {
 	text-align: left;
+	font-family: 'Ubuntu';
+	font-size: 14pt;
+    }
+    
+    .parcours-center {
+	text-align: center;
 	font-family: 'Ubuntu';
 	font-size: 14pt;
     }
