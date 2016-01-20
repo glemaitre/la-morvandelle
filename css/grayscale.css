@@ -426,6 +426,10 @@ img.center {
     font-size: 16px;
 }
 
+.text-faded {
+    color: rgba(255,255,255,.8);
+}
+
 .text-footer {
     font-size: 8px;
     text-align: center;
@@ -486,7 +490,7 @@ img.center {
     border: 2px solid #fff;
     border-radius: 100%!important;
     font-size: 40px;
-    color: #fff;
+    color: rgba(255,255,255,.7);
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -496,7 +500,7 @@ img.center {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
+    color: rgba(255,255,255,.7);
     background: rgba(255,255,255,.1);
 }
 
