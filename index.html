@@ -20,8 +20,13 @@
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
 
+    <!-- Plugin CSS for the entrance animation -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -77,13 +82,13 @@
       <div class="intro-body">
         <div class="container try">
           <h1 class="brand-heading"><span class="light">La</span> Sud-Morvandelle</h1><br>
-          <p class="intro-text"><b>JOURNEE SPORT NATURE</b></p>
-	  <p class="intro-text"><b>Course a Pied, Marche Nordique, VTT, Cylcotourisme, Randonnee Pedestre et Equestre</b></p>
+          <p class="intro-text">Journee Sport Nature</p>
+	  <p class="intro-text">Course a Pied, Marche Nordique, VTT, Cylcotourisme, Randonnee Pedestre et Equestre</p>
 
 	  <br>
 	  <br>
 
-	  <div class="row">
+	  <div class="row animated bounceIn">
 	    <div class="col-md-2"></div>
 	    <div class="col-md-3"></div>
 	    <div class="intro-date clock-time col-md-2 text-title intro-pad-image"><img src="img/timer.png" height="48" width="96"><br>16 Juillet 2016</div>
@@ -91,75 +96,81 @@
 	    <div class="col-md-2"></div>
 	  </div>
 	</div>
+
 	<br>
 	<br>
-	<div class="row">
-	  <div class="countdown countdown-container container">
-	    <div class="clock row">
-	      <div class="col-xs-2 col-md-2"></div>
-	      <div class="clock-item clock-days countdown-time-value col-xs-2 col-md-1">
-		<div class="wrap">
-		  <div class="inner">
-		    <div id="canvas-days" class="clock-canvas"></div>
 
-		    <div class="text">
-                      <p class="val">0</p>
-                      <p class="type-days type-time">Jrs</p>
-		    </div><!-- /.text -->
-		  </div><!-- /.inner -->
-		</div><!-- /.wrap -->
-	      </div><!-- /.clock-item -->
+	<div class="countdown countdown-container container animated bounceIn">
+      	  <div class="row clock">
+      	    <div class="col-xs-2 col-md-2"></div>
 
-	      <div class="col-xs-0 col-md-1"></div>
+      	    <div class="clock-item clock-days countdown-time-value col-xs-2 col-md-1">
+      	      <div class="wrap">
+      	  	<div class="inner">
+      	  	  <div id="canvas-days" class="clock-canvas"></div>
 
-	      <div class="clock-item clock-hours countdown-time-value col-xs-2 col-md-1">
-		<div class="wrap">
-		  <div class="inner">
-		    <div id="canvas-hours" class="clock-canvas"></div>
+      	  	  <div class="text">
+                    <p class="val">0</p>
+                    <p class="type-days type-time">Jrs</p>
+      	  	  </div><!-- /.text -->
+      	  	</div><!-- /.inner -->
+      	      </div><!-- /.wrap -->
+      	    </div><!-- /.clock-item -->
 
-		    <div class="text">
-                      <p class="val">0</p>
-                      <p class="type-hours type-time">Hrs</p>
-		    </div><!-- /.text -->
-		  </div><!-- /.inner -->
-		</div><!-- /.wrap -->
-	      </div><!-- /.clock-item -->
+      	    <div class="col-xs-0 col-md-1"></div>
 
-	      <div class="col-xs-0 col-md-1"></div>
+      	    <div class="clock-item clock-hours countdown-time-value col-xs-2 col-md-1">
+      	      <div class="wrap">
+      	  	<div class="inner">
+      	  	  <div id="canvas-hours" class="clock-canvas"></div>
 
-	      <div class="clock-item clock-minutes countdown-time-value col-xs-2 col-md-1">
-		<div class="wrap">
-		  <div class="inner">
-		    <div id="canvas-minutes" class="clock-canvas"></div>
+      	  	  <div class="text">
+                    <p class="val">0</p>
+                    <p class="type-hours type-time">Hrs</p>
+      	  	  </div><!-- /.text -->
+      	  	</div><!-- /.inner -->
+      	      </div><!-- /.wrap -->
+      	    </div><!-- /.clock-item -->
 
-		    <div class="text">
-                      <p class="val">0</p>
-                      <p class="type-minutes type-time">Min</p>
-		    </div><!-- /.text -->
-		  </div><!-- /.inner -->
-		</div><!-- /.wrap -->
-	      </div><!-- /.clock-item -->
+      	    <div class="col-xs-0 col-md-1"></div>
 
-	      <div class="col-xs-0 col-md-1"></div>
-	
-	      <div class="clock-item clock-seconds countdown-time-value col-xs-2 col-md-1">
-		<div class="wrap">
-		  <div class="inner">
-		    <div id="canvas-seconds" class="clock-canvas"></div>
+      	    <div class="clock-item clock-minutes countdown-time-value col-xs-2 col-md-1">
+      	      <div class="wrap">
+      	  	<div class="inner">
+      	  	  <div id="canvas-minutes" class="clock-canvas"></div>
 
-		    <div class="text">
-                      <p class="val">0</p>
-                      <p class="type-seconds type-time">Sec</p>
-		    </div><!-- /.text -->
-		  </div><!-- /.inner -->
-		</div><!-- /.wrap -->
-	      </div><!-- /.clock-item -->
-	    </div><!-- /.clock -->
-	  </div><!-- /.countdown-wrapper -->
-	 <div class="col-xs-2 col-md-2"></div>
-	</div>
+      	  	  <div class="text">
+                    <p class="val">0</p>
+                    <p class="type-minutes type-time">Min</p>
+      	  	  </div><!-- /.text -->
+      	  	</div><!-- /.inner -->
+      	      </div><!-- /.wrap -->
+      	    </div><!-- /.clock-item -->
+
+      	    <div class="col-xs-0 col-md-1"></div>
+	    
+      	    <div class="clock-item clock-seconds countdown-time-value col-xs-2 col-md-1">
+      	      <div class="wrap">
+      	  	<div class="inner">
+      	  	  <div id="canvas-seconds" class="clock-canvas"></div>
+
+      	  	  <div class="text">
+                    <p class="val">0</p>
+                    <p class="type-seconds type-time">Sec</p>
+      	  	  </div><!-- /.text -->
+      	  	</div><!-- /.inner -->
+      	      </div><!-- /.wrap -->
+      	    </div><!-- /.clock-item -->
+      	  </div>
+
+	  <div class="col-xs-2 col-md-2"></div>
+
+      	</div><!-- /.countdown-wrapper -->
+
+	<br>
+
 	<a href="#evenement" class="btn btn-circle page-scroll">
-	  <i class="fa fa-angle-double-down animated"></i>
+	  <i class="fa fa-angle-double-down animated bounceIn"></i>
 	</a>
       </div>	  
     </header>
@@ -167,256 +178,257 @@
     <!-- About Section -->
     <section id="evenement" class="container content-section">
       <div class="row">
-	<div class="col-lg-1"></div>
-	<div class="col-lg-10">
-	  <h2 class="text-center text-title">La Sud-Morvandelle</h2>
-	  <p class="parcours-left">La Sud-Morvandelle est une nouvelle organisation melant a la fois le sport et l'aspect nature. Multiples activites seront organisees au cours d'une journee unique : randonnee pedestre, randonnee equestre, marche nordique, VTT et course a pied.</p>	  
-	  <p class="parcours-left">Les departs seront donnes a partir de la <strong>Grande Halle</strong> de LUZY.</p>
-	  <div class="row">
-	    <div class="col-md-3"></div>
-	    <div class="col-md-6">
-	      <div class="col-md-6" id="grandeHalle" style="width:100%;height:380px;"></div>
-	    </div>
-	    <div class="col-md-3"></div>
-	  </div>
-	  <br>
+    	<div class="col-lg-1"></div>
+    	<div class="col-lg-10">
+    	  <h2 class="text-center text-title">La Sud-Morvandelle</h2>
+    	  <br>
+    	  <p class="parcours-left">La Sud-Morvandelle est une nouvelle organisation melant a la fois le sport et l'aspect nature. Multiples activites seront organisees au cours d'une journee unique : randonnee pedestre, randonnee equestre, marche nordique, VTT et course a pied.</p>
+    	  <p class="parcours-left">Les departs seront donnes a partir de la <strong>Grande Halle</strong> de LUZY.</p>
+    	  <div class="row">
+    	    <div class="col-md-3"></div>
+    	    <div class="col-md-6">
+    	      <div class="col-md-6" id="grandeHalle" style="width:100%;height:380px;"></div>
+    	    </div>
+    	    <div class="col-md-3"></div>
+    	  </div>
+    	  <br>
 
-	  <p class="parcours-left">Les inscriptions se feront a l'avance (voir section <a href="#contact">contact</a>) ou sur place moyennant une majoration.</p>
-	  <p class="parcours-left">L'inscription comprend les ravitaillements recontres sur les differents parcours ainsi qu'une assiette gourmande ou sportive au retour.</p>
-	  <br>
-	  <br>
-	  <!-- <h3 class="text-subtitle">Course a pied :</h3> -->
-	  <!-- <p class="parcours-left"></p> -->
-	  <!-- <ul class="parcours-left"> -->
-	  <!--   <li><strong>Heure de depart : </strong> de 15 h 00 a 19 h 00</li> -->
-	  <!--   <li><strong>Kilometrage : </strong> 7 km - 12 km - 17 km - 34 km </li> -->
-	  <!--   <li><strong>Denivele : </strong> 1800 m D+ - 600 m D+ </li> -->
-	  <!--   <li><strong>Ravitaillements : </strong> Chaque 10 km </li> -->
-	  <!--   <li class="text-blue"><strong>Tarifs : </strong> 4 euros / 5 euros</li> -->
-	  <!-- </ul> -->
-	  <!-- <h3 class="text-subtitle">Velo Tout Terrain :</h3> -->
-	  <!-- <ul class="parcours-left"> -->
-	  <!--   <li><strong>Heure de depart : </strong> de 16 h 00 a 18 h 00</li> -->
-	  <!--   <li><strong>Kilometrage : </strong> 50 km - 25 km </li> -->
-	  <!--   <li><strong>Denivele : </strong> 1800 m D+ - 600 m D+ </li> -->
-	  <!--   <li><strong>Ravitaillements : </strong> Chaque 10 km </li> -->
-	  <!--   <li class="text-blue"><strong>Tarifs : </strong> 4 euros / 5 euros</li> -->
-	  <!-- </ul> -->
-	  <!-- <p class="parcours-left">Make some explanations about the cuts and the required materials.</p> -->
-	  <!-- <h3 class="text-subtitle">Randonnee pedestre :</h3> -->
-	  <!-- <ul class="parcours-left"> -->
-	  <!--   <li><strong>Heure de depart : </strong> de 15 h 00 a 19 h00</li> -->
-	  <!--   <li><strong>Kilometrage : </strong> 7 km - 12 km - 17 km </li> -->
-	  <!--   <li><strong>Ravitaillements : </strong> Chaque 10 km </li> -->
-	  <!--   <li class="text-blue"><strong>Tarifs : </strong> 4 euros / 5 euros</li> -->
-	  <!-- </ul> -->
-	  <!-- <p class="parcours-left"></p> -->
-	  <!-- <h3 class="text-subtitle">Marche nordique :</h3> -->
-	  <!-- <p class="parcours-left">Des demonstrations auront lieu entre 16 h 00 et 19 h 00.</p> -->
-	  <!-- <\!-- <p class="parcours-left">Les details de l'epreuve chronometree sont les suivants :</p> -\-> -->
-	  <!-- <\!-- <ul class="parcours-left"> -\-> -->
-	  <!-- <\!--   <li><strong>Heure de depart : </strong> 18 h 00</li> -\-> -->
-	  <!-- <\!--   <li><strong>Kilometrage : </strong> 50 km - 25 km </li> -\-> -->
-	  <!-- <\!--   <li><strong>Denivele : </strong> 1800 m D+- 600 m D+ </li> -\-> -->
-	  <!-- <\!--   <li><strong>Ravitaillements : </strong> Chaque 10 km </li> -\-> -->
-	  <!-- <\!--   <li class="text-blue"><strong>Tarifs : </strong> 25 euros / 30 euros</li> -\-> -->
-	  <!-- <\!-- </ul> -\-> -->
-	  <!-- <p class="parcours-left"></p> -->
-	  <!-- <h3 class="text-subtitle">Randonnee equestre :</h3> -->
-	  <!-- <ul class="parcours-left"> -->
-	  <!--   <li><strong>Heure de depart : </strong> 15 h 00</li> -->
-	  <!--   <\!-- <li><strong>Kilometrage : </strong> 50 km - 25 km </li> -\-> -->
-	  <!--   <\!-- <li><strong>Denivele : </strong> 1800 m D+- 600 m D+ </li> -\-> -->
-	  <!--   <\!-- <li><strong>Ravitaillements : </strong> Chaque 10 km </li> -\-> -->
-	  <!-- </ul> -->
-	  <!-- <h3 class="text-subtitle">Village depart :</h3> -->
-	  <!-- <p class="parcours-left"></p> -->
-	  <!-- <ul class="parcours-left"> -->
-	  <!--   <li><strong>Horaire : </strong> de 15 h 00 a 22 h 00</li> -->
-	  <!--   <li><strong>Lieu : </strong> Grande Halle</li> -->
-	  <!--   <li>Stands materiel et equipement</li> -->
-	  <!--   <li>Exposition de produits du terroir</li> -->
-	  <!--   <li>Stands du bien-etre</li> -->
-	  <!--   <li>Stands Artisanat d'Art</li> -->
-	  <!-- </ul> -->
+    	  <p class="parcours-left">Les inscriptions se feront a l'avance (voir section <a href="#contact">contact</a>) ou sur place moyennant une majoration.</p>
+    	  <p class="parcours-left">L'inscription comprend les ravitaillements recontres sur les differents parcours ainsi qu'une assiette gourmande ou sportive au retour.</p>
+    	  <br>
+    	  <br>
+    <!-- 	  <\!-- <h3 class="text-subtitle">Course a pied :</h3> -\-> -->
+    <!-- 	  <\!-- <p class="parcours-left"></p> -\-> -->
+    <!-- 	  <\!-- <ul class="parcours-left"> -\-> -->
+    <!-- 	  <\!--   <li><strong>Heure de depart : </strong> de 15 h 00 a 19 h 00</li> -\-> -->
+    <!-- 	  <\!--   <li><strong>Kilometrage : </strong> 7 km - 12 km - 17 km - 34 km </li> -\-> -->
+    <!-- 	  <\!--   <li><strong>Denivele : </strong> 1800 m D+ - 600 m D+ </li> -\-> -->
+    <!-- 	  <\!--   <li><strong>Ravitaillements : </strong> Chaque 10 km </li> -\-> -->
+    <!-- 	  <\!--   <li class="text-blue"><strong>Tarifs : </strong> 4 euros / 5 euros</li> -\-> -->
+    <!-- 	  <\!-- </ul> -\-> -->
+    <!-- 	  <\!-- <h3 class="text-subtitle">Velo Tout Terrain :</h3> -\-> -->
+    <!-- 	  <\!-- <ul class="parcours-left"> -\-> -->
+    <!-- 	  <\!--   <li><strong>Heure de depart : </strong> de 16 h 00 a 18 h 00</li> -\-> -->
+    <!-- 	  <\!--   <li><strong>Kilometrage : </strong> 50 km - 25 km </li> -\-> -->
+    <!-- 	  <\!--   <li><strong>Denivele : </strong> 1800 m D+ - 600 m D+ </li> -\-> -->
+    <!-- 	  <\!--   <li><strong>Ravitaillements : </strong> Chaque 10 km </li> -\-> -->
+    <!-- 	  <\!--   <li class="text-blue"><strong>Tarifs : </strong> 4 euros / 5 euros</li> -\-> -->
+    <!-- 	  <\!-- </ul> -\-> -->
+    <!-- 	  <\!-- <p class="parcours-left">Make some explanations about the cuts and the required materials.</p> -\-> -->
+    <!-- 	  <\!-- <h3 class="text-subtitle">Randonnee pedestre :</h3> -\-> -->
+    <!-- 	  <\!-- <ul class="parcours-left"> -\-> -->
+    <!-- 	  <\!--   <li><strong>Heure de depart : </strong> de 15 h 00 a 19 h00</li> -\-> -->
+    <!-- 	  <\!--   <li><strong>Kilometrage : </strong> 7 km - 12 km - 17 km </li> -\-> -->
+    <!-- 	  <\!--   <li><strong>Ravitaillements : </strong> Chaque 10 km </li> -\-> -->
+    <!-- 	  <\!--   <li class="text-blue"><strong>Tarifs : </strong> 4 euros / 5 euros</li> -\-> -->
+    <!-- 	  <\!-- </ul> -\-> -->
+    <!-- 	  <\!-- <p class="parcours-left"></p> -\-> -->
+    <!-- 	  <\!-- <h3 class="text-subtitle">Marche nordique :</h3> -\-> -->
+    <!-- 	  <\!-- <p class="parcours-left">Des demonstrations auront lieu entre 16 h 00 et 19 h 00.</p> -\-> -->
+    <!-- 	  <\!-- <\\!-- <p class="parcours-left">Les details de l'epreuve chronometree sont les suivants :</p> -\\-> -\-> -->
+    <!-- 	  <\!-- <\\!-- <ul class="parcours-left"> -\\-> -\-> -->
+    <!-- 	  <\!-- <\\!--   <li><strong>Heure de depart : </strong> 18 h 00</li> -\\-> -\-> -->
+    <!-- 	  <\!-- <\\!--   <li><strong>Kilometrage : </strong> 50 km - 25 km </li> -\\-> -\-> -->
+    <!-- 	  <\!-- <\\!--   <li><strong>Denivele : </strong> 1800 m D+- 600 m D+ </li> -\\-> -\-> -->
+    <!-- 	  <\!-- <\\!--   <li><strong>Ravitaillements : </strong> Chaque 10 km </li> -\\-> -\-> -->
+    <!-- 	  <\!-- <\\!--   <li class="text-blue"><strong>Tarifs : </strong> 25 euros / 30 euros</li> -\\-> -\-> -->
+    <!-- 	  <\!-- <\\!-- </ul> -\\-> -\-> -->
+    <!-- 	  <\!-- <p class="parcours-left"></p> -\-> -->
+    <!-- 	  <\!-- <h3 class="text-subtitle">Randonnee equestre :</h3> -\-> -->
+    <!-- 	  <\!-- <ul class="parcours-left"> -\-> -->
+    <!-- 	  <\!--   <li><strong>Heure de depart : </strong> 15 h 00</li> -\-> -->
+    <!-- 	  <\!--   <\\!-- <li><strong>Kilometrage : </strong> 50 km - 25 km </li> -\\-> -\-> -->
+    <!-- 	  <\!--   <\\!-- <li><strong>Denivele : </strong> 1800 m D+- 600 m D+ </li> -\\-> -\-> -->
+    <!-- 	  <\!--   <\\!-- <li><strong>Ravitaillements : </strong> Chaque 10 km </li> -\\-> -\-> -->
+    <!-- 	  <\!-- </ul> -\-> -->
+    <!-- 	  <\!-- <h3 class="text-subtitle">Village depart :</h3> -\-> -->
+    <!-- 	  <\!-- <p class="parcours-left"></p> -\-> -->
+    <!-- 	  <\!-- <ul class="parcours-left"> -\-> -->
+    <!-- 	  <\!--   <li><strong>Horaire : </strong> de 15 h 00 a 22 h 00</li> -\-> -->
+    <!-- 	  <\!--   <li><strong>Lieu : </strong> Grande Halle</li> -\-> -->
+    <!-- 	  <\!--   <li>Stands materiel et equipement</li> -\-> -->
+    <!-- 	  <\!--   <li>Exposition de produits du terroir</li> -\-> -->
+    <!-- 	  <\!--   <li>Stands du bien-etre</li> -\-> -->
+    <!-- 	  <\!--   <li>Stands Artisanat d'Art</li> -\-> -->
+    <!-- 	  <\!-- </ul> -\-> -->
 
-	  <!-- First activity row -->
+    	  <!-- First activity row -->
 
-	  <div class="row">
-	    <!-- Running information -->
-	    <div class="col-md-4 text-center">
-	      <img src="./img/running.png" width="100px" height="auto">
-	      <h3 class="text-subtitle">Course a pied</h3>
-	      <p class="parcours-left"></p>
-	      <p class="parcours-center"><strong>Depart : </strong> de 15 h a 19 h <br>
-	      <strong>Distance : </strong> 7-12-17-34 km <br>
-	      <strong>Denivele : </strong> 1800-600 m D+ <br>
-	      <strong>Ravitaillements : </strong> Chaque 10 km <br>
-	      <strong>Tarifs : </strong> 4 euros/5 euros</p>
-	    </div>
-	    
-	    <!-- Hiking information -->
-	    <div class="col-md-4 text-center">
-	      <img src="./img/hike.png" width="100px" height="auto">
-	      <h3 class="text-subtitle">Randonnee pedestre</h3>
-	      <p class="parcours-left"></p>
-	      <p class="parcours-center"><strong>Depart : </strong> de 15 h a 19 h <br>
-	      <strong>Distance : </strong> 7-12-17 km <br>
-	      <strong>Ravitaillements : </strong> Chaque 10 km <br>
-	      <strong>Tarifs : </strong> 4 euros/5 euros</p>
-	    </div>
+    	  <div class="row">
+    	    <!-- Running information -->
+    	    <div class="col-md-4 text-center">
+    	      <img class="animated bounceIn" src="./img/running.png" width="100px" height="auto">
+    	      <h3 class="text-subtitle">Course a pied</h3>
+    	      <p class="parcours-left"></p>
+    	      <p class="parcours-center"><strong>Depart : </strong> de 15 h a 19 h <br>
+    	      <strong>Distance : </strong> 7-12-17-34 km <br>
+    	      <strong>Denivele : </strong> 1800-600 m D+ <br>
+    	      <strong>Ravitaillements : </strong> Chaque 10 km <br>
+    	      <strong>Tarifs : </strong> 4 euros/5 euros</p>
+    	    </div>
 
-	    <!-- Riding information -->
-	    <div class="col-md-4 text-center">
-	      <img src="./img/horse.png" width="100px" height="auto">
-	      <h3 class="text-subtitle">Randonnee equestre</h3>
-	      <p class="parcours-left"></p>
-	      <p class="parcours-center"><strong>Depart : </strong> de 15 h <br>
-	    </div>
-	  </div>
+    	    <!-- Hiking information -->
+    	    <div class="col-md-4 text-center">
+    	      <img class="animated bounceIn" src="./img/hike.png" width="100px" height="auto">
+    	      <h3 class="text-subtitle">Randonnee pedestre</h3>
+    	      <p class="parcours-left"></p>
+    	      <p class="parcours-center"><strong>Depart : </strong> de 15 h a 19 h <br>
+    	      <strong>Distance : </strong> 7-12-17 km <br>
+    	      <strong>Ravitaillements : </strong> Chaque 10 km <br>
+    	      <strong>Tarifs : </strong> 4 euros/5 euros</p>
+    	    </div>
 
-	  <br>
+    	    <!-- Horse riding information -->
+    	    <div class="col-md-4 text-center">
+    	      <img class="animated bounceIn" src="./img/horse.png" width="100px" height="auto">
+    	      <h3 class="text-subtitle">Randonnee equestre</h3>
+    	      <p class="parcours-left"></p>
+    	      <p class="parcours-center"><strong>Depart : </strong> a 15 h <br>
+    	    </div>
+    	  </div>
 
-	  <!-- Second activity row -->
+    	  <br>
 
-	  <div class="row">
+    	  <!-- Second activity row -->
 
-	    <!-- Mountain biking information -->
-	    <div class="col-md-6 text-center">
-	      <img src="./img/vtt.png" width="100px" height="auto">
-	      <h3 class="text-subtitle">Velo Tout Terrain</h3>
-	      <p class="parcours-left"></p>
-	      <p class="parcours-center"><strong>Depart : </strong> de 16 h a 18 h <br>
-	      <strong>Distance : </strong> 25-50 km <br>
-	      <strong>Denivele : </strong> 1800-600 m D+ <br>
-	      <strong>Ravitaillements : </strong> Chaque 10 km <br>
-	      <strong>Tarifs : </strong> 4 euros/5 euros</p>
-	    </div>
+    	  <div class="row">
 
-	    <!-- Road biking information -->
-	    <div class="col-md-6 text-center">
-	      <img src="./img/road-bike.png" width="100px" height="auto">
-	      <h3 class="text-subtitle">Cyclotourisme</h3>
-	      <p class="parcours-left"></p>
-	      <p class="parcours-center"><strong>Depart : </strong> de 9 h a 13 h <br>
-	      <strong>Distance : </strong> 100 km <br>
-	      <strong>Denivele : </strong> 1400 m D+ <br>
-	      <strong>Ravitaillements : </strong> Chaque 25 km <br>
-	      <strong>Tarifs : </strong> 4 euros/5 euros</p>
-	    </div>
-	  </div>
+    	    <!-- Mountain biking information -->
+    	    <div class="col-md-6 text-center">
+    	      <img class="animated bounceIn" src="./img/vtt.png" width="100px" height="auto">
+    	      <h3 class="text-subtitle">Velo Tout Terrain</h3>
+    	      <p class="parcours-left"></p>
+    	      <p class="parcours-center"><strong>Depart : </strong> de 16 h a 18 h <br>
+    	      <strong>Distance : </strong> 25-50 km <br>
+    	      <strong>Denivele : </strong> 1800-600 m D+ <br>
+    	      <strong>Ravitaillements : </strong> Chaque 10 km <br>
+    	      <strong>Tarifs : </strong> 4 euros/5 euros</p>
+    	    </div>
 
-	<div class="col-lg-1"></div>
+    	    <!-- Road biking information -->
+    	    <div class="col-md-6 text-center">
+    	      <img class="animated bounceIn" src="./img/road-bike.png" width="100px" height="auto">
+    	      <h3 class="text-subtitle">Cyclotourisme</h3>
+    	      <p class="parcours-left"></p>
+    	      <p class="parcours-center"><strong>Depart : </strong> de 9 h a 13 h <br>
+    	      <strong>Distance : </strong> 100 km <br>
+    	      <strong>Denivele : </strong> 1400 m D+ <br>
+    	      <strong>Ravitaillements : </strong> Chaque 25 km <br>
+    	      <strong>Tarifs : </strong> 4 euros/5 euros</p>
+    	    </div>
+    	  </div>
+
+    	<div class="col-lg-1"></div>
       </div>
     </section>
 
     <!-- Parcours Section -->
     <section id="parcours" class="content-section">
       <div class="download-section">
-	<div class="container">
-	  <div class="col-lg-1"></div>
-	  <div class="col-lg-10">
+    	<div class="container">
+    	  <div class="col-lg-1"></div>
+    	  <div class="col-lg-10">
             <h2 class="text-center text-title">Parcours</h2>
             <!-- <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p> -->
             <!-- <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a> -->
-	  </div>
-	  <div class="col-lg-1"></div>
-	</div>
-	<div class="container">
-	  <!-- Parcours Trail -->
-	  <div class="row">
-	    <h3 class="text-subtitle parcours-left">Course a Pied, VTT :</h3>
-	    <!-- <div class="col-md-6"> -->
-	    <!--   <\!-- <center><script type="text/javascript" src="http://www.openrunner.com/orservice/inorser-script.php?key=mykey&amp;ser=S09&amp;id=4223667&amp;w=100%&amp;h=350&amp;hp=128&amp;k=5&amp;m=0&amp;pa=1&amp;c=0&amp;ts=1427068000"></script></center>-\-> -->
-	    <!-- </div> -->
-	    <div class="col-md-12">
-	      <p class="text-center">Parcours 34 km</p>
- 	      <div id="trail46km" style="width:100%;height:380px;"></div>
-	      <img src="./img/profile-trail-46.png" width="100%" height="auto">
-	    </div>
-	  </div>
+    	  </div>
+    	  <div class="col-lg-1"></div>
+    	</div>
+    	<div class="container">
+    	  <!-- Parcours Trail -->
+    	  <div class="row">
+    	    <h3 class="text-subtitle parcours-left">Course a Pied, VTT :</h3>
+    	    <!-- <div class="col-md-6"> -->
+    	    <!--   <\!-- <center><script type="text/javascript" src="http://www.openrunner.com/orservice/inorser-script.php?key=mykey&amp;ser=S09&amp;id=4223667&amp;w=100%&amp;h=350&amp;hp=128&amp;k=5&amp;m=0&amp;pa=1&amp;c=0&amp;ts=1427068000"></script></center>-\-> -->
+    	    <!-- </div> -->
+    	    <div class="col-md-12">
+    	      <p class="text-center">Parcours 34 km</p>
+    	      <div id="trail46km" style="width:100%;height:380px;"></div>
+    	      <img src="./img/profile-trail-46.png" width="100%" height="auto">
+    	    </div>
+    	  </div>
 
-	  <!-- Parcours randonnees-->
-	  <div class="row">
-	    <h3 class="text-subtitle parcours-left">Randonnee Pedestre, Equestre, Marche Nordique :</h3>
-	      <div class="col-md-4">
-		<p class="text-center">Randonnee 7 km</p>
- 	        <div id="rand7km" style="width:100%;height:380px;"></div>
-		<img src="./img/profile-rand-7.png" width="100%" height="auto">
-	      </div>
+    	  <!-- Parcours randonnees-->
+    	  <div class="row">
+    	    <h3 class="text-subtitle parcours-left">Randonnee Pedestre, Equestre, Marche Nordique :</h3>
+    	      <div class="col-md-4">
+    		<p class="text-center">Randonnee 7 km</p>
+    	        <div id="rand7km" style="width:100%;height:380px;"></div>
+    		<img src="./img/profile-rand-7.png" width="100%" height="auto">
+    	      </div>
 
-	      <div class="col-md-4">
-		<p class="text-center">Randonnee 10 km</p>
- 	        <div id="rand10km" style="width:100%;height:380px;"></div>
-		<img src="./img/profile-rand-10.png" width="100%" height="auto">
-	      </div>
+    	      <div class="col-md-4">
+    		<p class="text-center">Randonnee 10 km</p>
+    	        <div id="rand10km" style="width:100%;height:380px;"></div>
+    		<img src="./img/profile-rand-10.png" width="100%" height="auto">
+    	      </div>
 
-	      <div class="col-md-4">
-		<p class="text-center">Randonnee 17 km</p>
- 	        <div id="rand17km" style="width:100%;height:380px;"></div>
-		<img src="./img/profile-rand-17.png" width="100%" height="auto">
-	      </div>
-	  </div>
-	</div>
+    	      <div class="col-md-4">
+    		<p class="text-center">Randonnee 17 km</p>
+    	        <div id="rand17km" style="width:100%;height:380px;"></div>
+    		<img src="./img/profile-rand-17.png" width="100%" height="auto">
+    	      </div>
+    	  </div>
+    	</div>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="container content-section">
       <div class="row">
-	<div class="col-lg-1"></div>
-	<div class="col-lg-10">
-	  <h2 class="text-center text-title">Contact</h2>
-	</div>
-	<div class="col-lg-1"></div>
+    	<div class="col-lg-1"></div>
+    	<div class="col-lg-10">
+    	  <h2 class="text-center text-title">Contact</h2>
+    	</div>
+    	<div class="col-lg-1"></div>
       </div>
       <br>
-      <div class="row">
-	<div class="col-lg-4">
-	  <div class="panel panel-primary" id="contact1">
-	    <div class="panel-heading">
-	      <h3 class="panel-title text-center panel-title">Cedric Lemaitre</h3>
-	    </div>
-	    <div class="panel-body">
-	      <address class="text-center panel-body">
-		La Mouille Guerin,<br>
-		71120 Saint Julien Sur Dheune<br>
-		<abbr title="Phone">P:</abbr> 06.72.71.55.84<br>
-		<a href="mailto:c.lemaitre58@gmail.com">c.lemaitre58@gmail.com</a>
-	      </address>
-	    </div>
-	  </div>
-	</div>
-	<div class="col-lg-4">
-	  <div class="panel panel-primary" id="contact2">
-	    <div class="panel-heading">
-	      <h3 class="panel-title text-center panel-title">Ginette Lemaitre</h3>
-	    </div>
-	    <div class="panel-body">
-	      <address class="text-center panel-body">
-		8 Place Andriot Guerin,<br>
-		58170 Luzy<br>
-		<abbr title="Phone">P:</abbr> 03.86.30.08.31<br>
-		<a href="mailto:patrice.lemaitre58@free.fr">patrice.lemaitre58@free.fr</a>
-	      </address>
-	    </div>
-	  </div>
-	</div>
-	<div class="col-lg-4">
-	  <div class="panel panel-primary" id="contact3">
-	    <div class="panel-heading">
-	      <h3 class="panel-title text-center panel-title">Guillaume Lemaitre</h3>
-	    </div>
-	    <div class="panel-body">
-	      <address class="text-center panel-body">
-		45 Rue Anatole France,<br>
-		71200 Le Creusot<br>
-		<abbr title="Phone">P:</abbr> 07.61.10.47.82<br>
-		<a href="mailto:g.lemaitre58@gmail.com">g.lemaitre58@gmail.com</a>
-	      </address>
-	    </div>
-	  </div>
-	</div>
+      <div class="row animated bounceIn">
+    	<div class="col-lg-4">
+    	  <div class="panel panel-primary" id="contact1">
+    	    <div class="panel-heading">
+    	      <h3 class="panel-title text-center panel-title">Cedric Lemaitre</h3>
+    	    </div>
+    	    <div class="panel-body">
+    	      <address class="text-center panel-body">
+    		La Mouille Guerin,<br>
+    		71120 Saint Julien Sur Dheune<br>
+    		<abbr title="Phone">P:</abbr> 06.72.71.55.84<br>
+    		<a href="mailto:c.lemaitre58@gmail.com">c.lemaitre58@gmail.com</a>
+    	      </address>
+    	    </div>
+    	  </div>
+    	</div>
+    	<div class="col-lg-4">
+    	  <div class="panel panel-primary" id="contact2">
+    	    <div class="panel-heading">
+    	      <h3 class="panel-title text-center panel-title">Ginette Lemaitre</h3>
+    	    </div>
+    	    <div class="panel-body">
+    	      <address class="text-center panel-body">
+    		8 Place Andriot Guerin,<br>
+    		58170 Luzy<br>
+    		<abbr title="Phone">P:</abbr> 03.86.30.08.31<br>
+    		<a href="mailto:patrice.lemaitre58@free.fr">patrice.lemaitre58@free.fr</a>
+    	      </address>
+    	    </div>
+    	  </div>
+    	</div>
+    	<div class="col-lg-4">
+    	  <div class="panel panel-primary" id="contact3">
+    	    <div class="panel-heading">
+    	      <h3 class="panel-title text-center panel-title">Guillaume Lemaitre</h3>
+    	    </div>
+    	    <div class="panel-body">
+    	      <address class="text-center panel-body">
+    		45 Rue Anatole France,<br>
+    		71200 Le Creusot<br>
+    		<abbr title="Phone">P:</abbr> 07.61.10.47.82<br>
+    		<a href="mailto:g.lemaitre58@gmail.com">g.lemaitre58@gmail.com</a>
+    	      </address>
+    	    </div>
+    	  </div>
+    	</div>
     </section>
 
     <!-- Map Section -->
@@ -425,22 +437,22 @@
     <!-- Footer -->
     <div class="navbar navbar-default navbar-fixed-bottom">
       <div class="container">
-	<div class="row">
-	  <div class="col-xs-0 col-md-2"></div>
-	  <div class="col-xs-3 col-md-2"><img class="center" src="./img/parc.png" align="middle" width="30%"></div>
-	  <div class="col-xs-3 col-md-2"><img class="center" src="./img/ufolep.png" align="middle" width="100%"></div>
-	  <div class="col-xs-3 col-md-2"><img class="center" src="./img/fours.png" align="middle" width="80%"></div>
-	  <div class="col-xs-3 col-md-2"><img class="center" src="./img/luzy.png" align="middle" width="35%"></div>
-	  <div class="col-xs-0 col-md-2"></div>
-	</div>
-	<div class="row">
-	  <div class="text-footer">
-	    &copy; 2016 - ASC Fours - Guillaume Lemaitre
-	  </div>
-	</div>
+    	<div class="row">
+    	  <div class="col-xs-0 col-md-2"></div>
+    	  <div class="col-xs-3 col-md-2"><img class="center" src="./img/parc.png" align="middle" width="15%"></div>
+    	  <div class="col-xs-3 col-md-2"><img class="center" src="./img/ufolep.png" align="middle" width="50%"></div>
+    	  <div class="col-xs-3 col-md-2"><img class="center" src="./img/fours.png" align="middle" width="40%"></div>
+    	  <div class="col-xs-3 col-md-2"><img class="center" src="./img/luzy.png" align="middle" width="17%"></div>
+    	  <div class="col-xs-0 col-md-2"></div>
+    	</div>
+    	<div class="row">
+    	  <div class="text-footer">
+    	    &copy; 2016 - ASC Fours - Guillaume Lemaitre
+    	  </div>
+    	</div>
       </div>
     </div>
-    
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -461,7 +473,7 @@
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1xk6iW3JiUOb9aFIF-6jICVGYeAjQHRU&sensor=false"></script>
-    
+
     <script>
       // return gmaps lat/lng object from coords
       function coord(lat,lng) { return new google.maps.LatLng(lat,lng); };
@@ -491,118 +503,118 @@
       center:new google.maps.LatLng(46.79197, 3.94992),
       zoom:13,
       <!-- mapTypeId:google.maps.MapTypeId.ROADMAP -->
-            styles: [{
-            "featureType": "water",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "landscape",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 29
-            }, {
-                "weight": 0.2
-            }]
-        }, {
-            "featureType": "road.arterial",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 18
-            }]
-        }, {
-            "featureType": "road.local",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "featureType": "poi",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 21
-            }]
-        }, {
-            "elementType": "labels.text.stroke",
-            "stylers": [{
-                "visibility": "on"
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "elementType": "labels.text.fill",
-            "stylers": [{
-                "saturation": 36
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 40
-            }]
-        }, {
-            "elementType": "labels.icon",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "transit",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 19
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }, {
-                "weight": 1.2
-            }]
-     }]
+      styles: [{
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }]
+      }, {
+      "featureType": "landscape",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 20
+      }]
+      }, {
+      "featureType": "road.highway",
+      "elementType": "geometry.fill",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }]
+      }, {
+      "featureType": "road.highway",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 29
+      }, {
+      "weight": 0.2
+      }]
+      }, {
+      "featureType": "road.arterial",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 18
+      }]
+      }, {
+      "featureType": "road.local",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 16
+      }]
+      }, {
+      "featureType": "poi",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 21
+      }]
+      }, {
+      "elementType": "labels.text.stroke",
+      "stylers": [{
+      "visibility": "on"
+      }, {
+      "color": "#000000"
+      }, {
+      "lightness": 16
+      }]
+      }, {
+      "elementType": "labels.text.fill",
+      "stylers": [{
+      "saturation": 36
+      }, {
+      "color": "#000000"
+      }, {
+      "lightness": 40
+      }]
+      }, {
+      "elementType": "labels.icon",
+      "stylers": [{
+      "visibility": "off"
+      }]
+      }, {
+      "featureType": "transit",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 19
+      }]
+      }, {
+      "featureType": "administrative",
+      "elementType": "geometry.fill",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 20
+      }]
+      }, {
+      "featureType": "administrative",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }, {
+      "weight": 1.2
+      }]
+      }]
 
       };
       var map=new google.maps.Map(document.getElementById("rand7km"), mapProp);
-            polyline(map,
+      polyline(map,
       [
       coord(46.7898,3.96648),
       coord(46.78941,3.96766),
@@ -742,114 +754,114 @@
       center:new google.maps.LatLng(46.78653, 3.95407),
       zoom:13,
       <!-- mapTypeId:google.maps.MapTypeId.ROADMAP -->
-            styles: [{
-            "featureType": "water",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "landscape",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 29
-            }, {
-                "weight": 0.2
-            }]
-        }, {
-            "featureType": "road.arterial",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 18
-            }]
-        }, {
-            "featureType": "road.local",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "featureType": "poi",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 21
-            }]
-        }, {
-            "elementType": "labels.text.stroke",
-            "stylers": [{
-                "visibility": "on"
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "elementType": "labels.text.fill",
-            "stylers": [{
-                "saturation": 36
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 40
-            }]
-        }, {
-            "elementType": "labels.icon",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "transit",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 19
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }, {
-                "weight": 1.2
-            }]
-     }]
+      styles: [{
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }]
+      }, {
+      "featureType": "landscape",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 20
+      }]
+      }, {
+      "featureType": "road.highway",
+      "elementType": "geometry.fill",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }]
+      }, {
+      "featureType": "road.highway",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 29
+      }, {
+      "weight": 0.2
+      }]
+      }, {
+      "featureType": "road.arterial",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 18
+      }]
+      }, {
+      "featureType": "road.local",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 16
+      }]
+      }, {
+      "featureType": "poi",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 21
+      }]
+      }, {
+      "elementType": "labels.text.stroke",
+      "stylers": [{
+      "visibility": "on"
+      }, {
+      "color": "#000000"
+      }, {
+      "lightness": 16
+      }]
+      }, {
+      "elementType": "labels.text.fill",
+      "stylers": [{
+      "saturation": 36
+      }, {
+      "color": "#000000"
+      }, {
+      "lightness": 40
+      }]
+      }, {
+      "elementType": "labels.icon",
+      "stylers": [{
+      "visibility": "off"
+      }]
+      }, {
+      "featureType": "transit",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 19
+      }]
+      }, {
+      "featureType": "administrative",
+      "elementType": "geometry.fill",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 20
+      }]
+      }, {
+      "featureType": "administrative",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }, {
+      "weight": 1.2
+      }]
+      }]
 
       };
       var map=new google.maps.Map(document.getElementById("rand10km"), mapProp);
@@ -1040,114 +1052,114 @@
       center:new google.maps.LatLng(46.78337, 3.96218),
       zoom:13,
       <!-- mapTypeId:google.maps.MapTypeId.ROADMAP -->
-            styles: [{
-            "featureType": "water",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "landscape",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 29
-            }, {
-                "weight": 0.2
-            }]
-        }, {
-            "featureType": "road.arterial",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 18
-            }]
-        }, {
-            "featureType": "road.local",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "featureType": "poi",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 21
-            }]
-        }, {
-            "elementType": "labels.text.stroke",
-            "stylers": [{
-                "visibility": "on"
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "elementType": "labels.text.fill",
-            "stylers": [{
-                "saturation": 36
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 40
-            }]
-        }, {
-            "elementType": "labels.icon",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "transit",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 19
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }, {
-                "weight": 1.2
-            }]
-     }]
+      styles: [{
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }]
+      }, {
+      "featureType": "landscape",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 20
+      }]
+      }, {
+      "featureType": "road.highway",
+      "elementType": "geometry.fill",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }]
+      }, {
+      "featureType": "road.highway",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 29
+      }, {
+      "weight": 0.2
+      }]
+      }, {
+      "featureType": "road.arterial",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 18
+      }]
+      }, {
+      "featureType": "road.local",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 16
+      }]
+      }, {
+      "featureType": "poi",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 21
+      }]
+      }, {
+      "elementType": "labels.text.stroke",
+      "stylers": [{
+      "visibility": "on"
+      }, {
+      "color": "#000000"
+      }, {
+      "lightness": 16
+      }]
+      }, {
+      "elementType": "labels.text.fill",
+      "stylers": [{
+      "saturation": 36
+      }, {
+      "color": "#000000"
+      }, {
+      "lightness": 40
+      }]
+      }, {
+      "elementType": "labels.icon",
+      "stylers": [{
+      "visibility": "off"
+      }]
+      }, {
+      "featureType": "transit",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 19
+      }]
+      }, {
+      "featureType": "administrative",
+      "elementType": "geometry.fill",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 20
+      }]
+      }, {
+      "featureType": "administrative",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }, {
+      "weight": 1.2
+      }]
+      }]
 
       };
       var map=new google.maps.Map(document.getElementById("rand17km"), mapProp);
@@ -1343,114 +1355,114 @@
       var mapProp = {
       center:new google.maps.LatLng(46.86, 3.98),
       zoom:11,
-            styles: [{
-            "featureType": "water",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "landscape",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 29
-            }, {
-                "weight": 0.2
-            }]
-        }, {
-            "featureType": "road.arterial",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 18
-            }]
-        }, {
-            "featureType": "road.local",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "featureType": "poi",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 21
-            }]
-        }, {
-            "elementType": "labels.text.stroke",
-            "stylers": [{
-                "visibility": "on"
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "elementType": "labels.text.fill",
-            "stylers": [{
-                "saturation": 36
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 40
-            }]
-        }, {
-            "elementType": "labels.icon",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "transit",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 19
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }, {
-                "weight": 1.2
-            }]
-     }]
+      styles: [{
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }]
+      }, {
+      "featureType": "landscape",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 20
+      }]
+      }, {
+      "featureType": "road.highway",
+      "elementType": "geometry.fill",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }]
+      }, {
+      "featureType": "road.highway",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 29
+      }, {
+      "weight": 0.2
+      }]
+      }, {
+      "featureType": "road.arterial",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 18
+      }]
+      }, {
+      "featureType": "road.local",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 16
+      }]
+      }, {
+      "featureType": "poi",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 21
+      }]
+      }, {
+      "elementType": "labels.text.stroke",
+      "stylers": [{
+      "visibility": "on"
+      }, {
+      "color": "#000000"
+      }, {
+      "lightness": 16
+      }]
+      }, {
+      "elementType": "labels.text.fill",
+      "stylers": [{
+      "saturation": 36
+      }, {
+      "color": "#000000"
+      }, {
+      "lightness": 40
+      }]
+      }, {
+      "elementType": "labels.icon",
+      "stylers": [{
+      "visibility": "off"
+      }]
+      }, {
+      "featureType": "transit",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 19
+      }]
+      }, {
+      "featureType": "administrative",
+      "elementType": "geometry.fill",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 20
+      }]
+      }, {
+      "featureType": "administrative",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }, {
+      "weight": 1.2
+      }]
+      }]
 
       };
       var map=new google.maps.Map(document.getElementById("trail46km"), mapProp);
@@ -1928,113 +1940,113 @@
       center:new google.maps.LatLng(46.79003, 3.966494),
       zoom:16,
       styles: [{
-            "featureType": "water",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "landscape",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 29
-            }, {
-                "weight": 0.2
-            }]
-        }, {
-            "featureType": "road.arterial",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 18
-            }]
-        }, {
-            "featureType": "road.local",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "featureType": "poi",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 21
-            }]
-        }, {
-            "elementType": "labels.text.stroke",
-            "stylers": [{
-                "visibility": "on"
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 16
-            }]
-        }, {
-            "elementType": "labels.text.fill",
-            "stylers": [{
-                "saturation": 36
-            }, {
-                "color": "#000000"
-            }, {
-                "lightness": 40
-            }]
-        }, {
-            "elementType": "labels.icon",
-            "stylers": [{
-                "visibility": "off"
-            }]
-        }, {
-            "featureType": "transit",
-            "elementType": "geometry",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 19
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.fill",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 20
-            }]
-        }, {
-            "featureType": "administrative",
-            "elementType": "geometry.stroke",
-            "stylers": [{
-                "color": "#000000"
-            }, {
-                "lightness": 17
-            }, {
-                "weight": 1.2
-            }]
-     }]
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }]
+      }, {
+      "featureType": "landscape",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 20
+      }]
+      }, {
+      "featureType": "road.highway",
+      "elementType": "geometry.fill",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }]
+      }, {
+      "featureType": "road.highway",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 29
+      }, {
+      "weight": 0.2
+      }]
+      }, {
+      "featureType": "road.arterial",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 18
+      }]
+      }, {
+      "featureType": "road.local",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 16
+      }]
+      }, {
+      "featureType": "poi",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 21
+      }]
+      }, {
+      "elementType": "labels.text.stroke",
+      "stylers": [{
+      "visibility": "on"
+      }, {
+      "color": "#000000"
+      }, {
+      "lightness": 16
+      }]
+      }, {
+      "elementType": "labels.text.fill",
+      "stylers": [{
+      "saturation": 36
+      }, {
+      "color": "#000000"
+      }, {
+      "lightness": 40
+      }]
+      }, {
+      "elementType": "labels.icon",
+      "stylers": [{
+      "visibility": "off"
+      }]
+      }, {
+      "featureType": "transit",
+      "elementType": "geometry",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 19
+      }]
+      }, {
+      "featureType": "administrative",
+      "elementType": "geometry.fill",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 20
+      }]
+      }, {
+      "featureType": "administrative",
+      "elementType": "geometry.stroke",
+      "stylers": [{
+      "color": "#000000"
+      }, {
+      "lightness": 17
+      }, {
+      "weight": 1.2
+      }]
+      }]
       };
       var map=new google.maps.Map(document.getElementById("grandeHalle"), mapProp);
 
@@ -2057,7 +2069,7 @@
     <!--   var mapProp = { -->
     <!--   center:new google.maps.LatLng(46.79003, 3.966494), -->
     <!--   zoom:16, -->
-      
+
     <!--   // Disables the default Google Maps UI components -->
     <!--   disableDefaultUI: true, -->
     <!--   scrollwheel: false, -->
