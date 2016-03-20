@@ -1,26 +1,19 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Grayscale](http://startbootstrap.com/template-overviews/grayscale/)
+![alt text](img/logo_ascfours.png)
 
-[Grayscale](http://startbootstrap.com/template-overviews/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template features various content sections and a Google Maps section with a custom map marker.
+LA SUD MORVANDELLE
+==================
 
-## Getting Started
+La deuxième édition de la **SUD MORVANDELLE** aura lieu le *samedi 16 Juillet* 2016 à *LUZY*.
+Les organisateurs repartent dans le même état d’esprit c'est-à-dire en mettant au centre de l'événement les valeurs de convivialité, de partage, découverte et respect de la nature. Ce sera aussi l’occasion de **découvrir** ou redécouvrir **le terroir local et ses acteurs**.
 
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+Des nouveautés seront proposées. Ainsi, une randonnée cyclotouriste parcourra l'ensemble des villages de la communauté de communes et abordera les premiers contreforts du MORVAN.
 
-## Bugs and Issues
+Un circuit pédestre longue distance pour randonneurs chevronnés proposera l'**ascension du MONT-BEUVRAY** (LUZY / MONT-BEUVRAY, aller–retour). Une **visite de LUZY** avec JEAN-PIERRE MORDIER, membre du groupe d’histoire locale, sera proposée. La visite débutera à la Mairie (salle des tapisseries) à 10h et sera suivie d’une promenade au centre ville pour comprendre l’évolution de la ville au cours des trois siècles derniers ; retour vers 10h30 à la GRANDE HALLE.
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-grayscale/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/grayscale/).
+Ces trois nouvelles activités donneront le coup d’envoi de la journée **SPORT NATURE** dès le matin. Elles laisseront place l’après midi aux **randonnées pédestres** (3 distances au choix), **course à pieds**, **équestre** et **VTT à travers les paysages du SUD MORVAN**.
 
-## Creator
+LA **GRANDE HALLE** sera le **centre névralgique** de la journée. Cet espace sera non seulement le lieu de départ, de retour et de restauration de toutes les activités mais également un lieu ou les exposants vous proposeront produits du terroir, objets d’arts, espace bien être, etc.
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+Un repas campagnard sera servi en soirée dans une ambiance festive.
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
+![alt text](img/clps2015.png) ![alt text](img/parc.png) ![alt text](img/luzy-logo-com.png "Logo Title Text 1")
