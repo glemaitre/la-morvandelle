@@ -1,4 +1,4 @@
-![alt text](img/logo_ascfours.png =100x)
+<img src="img/logo_ascfours.png" height="75px" />
 
 LA SUD MORVANDELLE
 ==================
@@ -16,4 +16,4 @@ LA **GRANDE HALLE** sera le **centre névralgique** de la journée. Cet espace s
 
 Un repas campagnard sera servi en soirée dans une ambiance festive.
 
-![alt text](img/clps2015.png =50x) ![alt text](http://www.amisdelaterre.org/IMG/arton1224.jpg?1380361882 =50x) ![alt text](img/luzy-logo-com.png =50x)
+<img src="img/clps2015.png" height="75px" /> <img src="http://www.amisdelaterre.org/IMG/arton1224.jpg?1380361882" height="75px" /> <img src="img/luzy-logo-com.pngpng" height="75px" />
