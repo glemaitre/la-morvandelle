@@ -561,15 +561,13 @@
 
 	  // Define a symbol using SVG path notation, with an opacity of 1.
 	  var lineSymbol = {
-	  path: 'M 0,-.5 0,.5',
-	  strokeOpacity: 1,
-	  scale: 4
+	  path: 'M 0,-1 0,1',
+	  strokeOpacity: .5,
+	  scale: 3
 	  };
 
-	  function polyline_2(m,coords)
+	  function polyline_1(m,coords, color, weight)
 	  {
-	  color = '#21819d';
-	  weight = 3;
 	  return new google.maps.Polyline(
 	  {
 	  path: coords,
@@ -586,15 +584,37 @@
 
 	  // Define a symbol using SVG path notation, with an opacity of 1.
 	  var lineSymbol2 = {
-	  path: 'M 0,-.5 0,.5',
-	  strokeOpacity: 1,
-	  scale: 4
+	  path: 'M 0,-1 0,1',
+	  strokeOpacity: .5,
+	  scale: 3
 	  };
 
-	  function polyline_2(m,coords)
+	  function polyline_2(m,coords, color, weight)
 	  {
-	  color = '#21819d';
-	  weight = 3;
+	  return new google.maps.Polyline(
+	  {
+	  path: coords,
+	  strokeColor: color,
+	  strokeWeight: weight,
+	  strokeOpacity: 0,
+	  icons: [{
+	  icon: lineSymbol,
+	  offset: '0',
+	  repeat: '20px'
+	  }],
+	  }).setMap(m);
+	  };
+
+
+	  // Define a symbol using SVG path notation, with an opacity of 1.
+	  var lineSymbol3 = {
+	  path: 'M 0,-1.5 0,1.5',
+	  strokeOpacity: .5,
+	  scale: 3
+	  };
+
+	  function polyline_3(m,coords, color, weight)
+	  {
 	  return new google.maps.Polyline(
 	  {
 	  path: coords,
@@ -612,7 +632,7 @@
 
 	  function initialize() {
 	  var mapProp = {
-	  center:new google.maps.LatLng(46.79197, 3.94992),
+	  center:new google.maps.LatLng(46.776037, 3.973363),
 	  zoom:13,
 	  <!-- mapTypeId:google.maps.MapTypeId.ROADMAP -->
 	  styles: [{
@@ -843,9 +863,9 @@
 	  coord(46.78947,3.96741),
 	  coord(46.7898,3.96715),
 	  ],
-	  '#21819d', .5, 3.);
+	  '#ff0000', 6.);
 
-	  polyline(map,
+	  polyline_3(map,
 	  [
 	  //18 km
 	  coord(46.78987,3.96655),
@@ -1064,9 +1084,9 @@
 	  coord(46.78957,3.96737),
 	  coord(46.78981,3.96674),
 	  ],
-	  '#21819d', .5, 5.);
+	  '#00ff00', 6.);
 
-	  polyline(map,
+	  polyline_1(map,
 	  [
 	  //7km
 	  coord(46.78995,3.9673),
@@ -1133,7 +1153,7 @@
 	  coord(46.78963,3.96722),
 	  coord(46.79008,3.96767),
 	  ],
-	  '#21819d', .5, 1.);
+	  '#0000ff', 6.);
 	  }
 
 	  google.maps.event.addDomListener(window, 'load', initialize);      
