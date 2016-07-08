@@ -15,7 +15,7 @@
    viewBox="0 0 744.09448819 1052.3622047"
    id="svg8027"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="marche18km.svg">
   <defs
      id="defs8029">
@@ -1712,17 +1712,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="277.37588"
-     inkscape:cy="840.79777"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="83.871038"
+     inkscape:cy="802.16781"
      inkscape:document-units="px"
      inkscape:current-layer="g11636-49"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1056"
-     inkscape:window-x="1172"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="970"
+     inkscape:window-height="1161"
+     inkscape:window-x="946"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata8032">
     <rdf:RDF>
@@ -1731,7 +1731,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -5077,6 +5077,23 @@
            d="M 219.52882,100.3836 239.2268,75.129784"
            id="path11837"
            inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-size:100px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+           x="-50.39782"
+           y="352.02753"
+           id="text5583"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan5585"
+             x="-50.39782"
+             y="352.02753"
+             style="font-size:14px">Contact en cas d'urgence:</tspan><tspan
+             sodipodi:role="line"
+             x="-50.39782"
+             y="369.52753"
+             id="tspan5587"
+             style="font-size:14px">06.51.86.02.21</tspan></text>
       </g>
     </g>
   </g>

@@ -15,7 +15,7 @@
    viewBox="0 0 744.09448819 1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="VTT25.svg">
   <defs
      id="defs4">
@@ -1720,15 +1720,15 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
      inkscape:cx="406.21986"
-     inkscape:cy="600.8122"
+     inkscape:cy="358.37559"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1056"
-     inkscape:window-x="1172"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="1723"
+     inkscape:window-height="1161"
+     inkscape:window-x="193"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -1737,7 +1737,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -5889,7 +5889,7 @@
            x="-250.51784"
            y="237.1691"
            style="font-size:7.5px;" /></flowRegion><flowPara
-         id="flowPara8503"></flowPara></flowRoot>    <g
+         id="flowPara8503" /></flowRoot>    <g
        id="g8513"
        transform="translate(340,58)">
       <rect
@@ -5922,5 +5922,32 @@
        d="m -184.85792,116.96095 c 4.25768,-0.80983 0.24232,-3.5151 1.01016,-5.05076 0.21296,-0.42592 0.79719,-0.58424 1.01015,-1.01016 0.15058,-0.30117 0,-0.67343 0,-1.01015 0,-0.33672 0,-0.67344 0,-1.01015"
        id="path15791"
        inkscape:connector-curvature="0" />
-  </g>
+    <text
+       xml:space="preserve"
+       style="font-size:100px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+       x="31.314724"
+       y="989.73273"
+       id="text5583"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5585"
+         x="31.314724"
+         y="989.73273"
+         style="font-size:14px">Contact en cas d'urgence:</tspan><tspan
+         sodipodi:role="line"
+         x="31.314724"
+         y="1007.2327"
+         id="tspan5587"
+         style="font-size:14px">06.51.86.02.21</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot5589"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Ubuntu;font-style:normal;font-weight:normal;font-size:100px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Ubuntu;font-stretch:normal;font-variant:normal"><flowRegion
+         id="flowRegion5591"><rect
+           id="rect5593"
+           width="634.37579"
+           height="123.23861"
+           x="-127.27922"
+           y="926.09314" /></flowRegion><flowPara
+         id="flowPara5595"></flowPara></flowRoot>  </g>
 </svg>
